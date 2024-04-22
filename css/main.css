@@ -1,5 +1,4 @@
 /* HIDE UGLY SCROLLBAR IN ALL BROWSERS */
-
 :root::-webkit-scrollbar {
   display: none;
 }
@@ -10,7 +9,6 @@
 }
 
 /* FONTS */
-
 @import url("https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap");
 
 @font-face {
@@ -34,8 +32,13 @@
   font-style: normal;
 }
 
-/* CONTAINERS */
+h2 {
+  font-family: "Silkscreen", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
+/* CONTAINERS */
 * {
   margin: 0;
 }
@@ -53,10 +56,115 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-flow: row wrap;
+  text-align: center;
+}
+
+.sections {
+  /*create universal padding once approved by Amed*/
+}
+
+.footer {
+  height: auto;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 24px 20px 24px 20px;
+}
+
+/* COMPONENTS */
+.menu {
+  border-radius: 8px;
+  color: #f7f7f7;
+  background-color: #3f0505;
+  box-shadow: 4px 4px #200101;
+  padding: 10px;
+  margin: 10px;
+  /*Need to make width adjustable via. screensize (JS)?*/
+  width: 300px;
+  height: 40px;
+  font-size: large;
+  text-shadow: 0 0 1px #fff, 0 0 15px #fc0303, 0 0 20px #fc0303,
+    0 0 25px #fc0303, 0 0 30px #fc0303;
+}
+
+.links {
+  margin-top: 4px;
+  margin-bottom: 4px;
+  font-size: large;
+  /*Update to no-longer need the pointer, and instead uses a/href and redirects to "404 Page"*/
+  cursor: pointer;
+}
+
+.title {
+  padding: 16px;
+  margin: 0px 20px 2px 20px;
+}
+
+.section-text {
+  color: #f7f7f7;
+  text-shadow: black 2px 4px;
+}
+
+/* LINEUP AND COUNTRIES/LOCATIONS */
+.lineup-country {
+  color: #f7f7f7;
+  width: 200px;
+  height: auto;
+  position: absolute;
+  text-align: center;
+  font-size: smaller;
+
+  left: 20px;
+  bottom: -1px;
+
+  background: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(9, 9, 121, 0) 50%
+  );
+}
+
+.locations-group {
+  display: grid;
+  align-items: center;
+  align-content: center;
+}
+
+/* TICKETS */
+.tickets-background {
+  border-radius: 100px;
+  box-shadow: 0px 0px 48px 24px #fc030390;
+}
+
+.tickets-button {
+  background-color: #3f0505;
+  color: #f7f7f7;
+  /*Update to no-longer need the pointer, and instead uses a/href and redirects to Artist Page(?)*/
+  cursor: pointer;
+  border-radius: 100px;
+  text-align: center;
+}
+
+.big-ticket-button {
+  padding: 32px;
+  box-shadow: 0px 6px 2px #0000008b;
+  text-shadow: 0 0 1px #fff, 0 0 15px #fc0303, 0 0 20px #fc0303,
+    0 0 25px #fc0303, 0 0 30px #fc0303;
+  font-size: x-large;
+}
+
+.mini-ticket {
+  margin: -8px 54px 4px 54px;
+}
+
+.mini-ticket-button {
+  padding: 4px;
+  border-radius: 25px;
+  box-shadow: 0px 4px 2px #0000008b;
+  font-size: small;
 }
 
 /* DISPLAY COMPONENT AND SUBCOMPONENTS */
-
 .displays {
   margin: 20px;
   border-radius: 20px;
@@ -73,9 +181,10 @@
   border: #000000;
   border-width: 3px;
   border-style: solid;
+  object-fit: cover;
 }
 
-.displaysinfo {
+.displays-info {
   color: #f7f7f7;
   width: 200px;
   height: auto;
@@ -103,4 +212,39 @@
   position: absolute;
   z-index: 10;
   display: none;
+}
+
+/* CONTENTS */
+.background-shadows {
+  background-color: #00000071;
+  box-shadow: 0px 0px 24px #000000e4;
+}
+
+.key-info {
+  align-content: space-between;
+  padding: 16px;
+  margin-top: 48px;
+  margin-bottom: 52px;
+  border-radius: 50px;
+}
+
+.logo {
+  margin-left: 4px;
+  cursor: pointer;
+}
+
+.burger {
+  margin-right: 4px;
+  cursor: pointer;
+}
+
+.signup {
+  padding: 28px;
+  margin-top: 24px;
+  margin-bottom: 12px;
+}
+
+.on-sale {
+  padding: 12px;
+  margin: 20px 0px 20px 0px;
 }
