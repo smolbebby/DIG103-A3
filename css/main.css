@@ -50,13 +50,13 @@ h2 {
   background-size: cover;
   background-position: center;
   font-family: "KodeMono", monospace;
+  overflow-y: scroll;
 }
 
 .utility {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: row wrap;
   text-align: center;
 }
 
@@ -64,6 +64,31 @@ h2 {
   height: auto;
   padding: 8px;
   justify-content: space-between;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+.top-section {
+  flex-flow: row wrap;
+  padding: 24px;
+  margin: 20px;
+}
+
+.more-info {
+  flex-flow: row wrap;
+  padding: 12px;
+  margin: 0px 20px 60px 20px;
+}
+
+.section {
+  flex-flow: row wrap;
+  padding: 12px;
+  margin: 18px 18px 18px 18px;
+}
+
+.key-info {
+  align-content: space-between;
+  border-radius: 50px;
 }
 
 .footer {
@@ -152,6 +177,8 @@ h2 {
   text-shadow: 0 0 1px #fff, 0 0 15px #fc0303, 0 0 20px #fc0303,
     0 0 25px #fc0303, 0 0 30px #fc0303;
   font-size: x-large;
+  max-height: 8px;
+  min-width: 320px;
 }
 
 .mini-ticket {
@@ -216,26 +243,18 @@ h2 {
 }
 
 /* CONTENTS */
+.main-logo {
+  /* need to incorp in js - adjustable placement depending on screen size */
+}
+
 .background-shadows {
   background-color: #00000071;
   box-shadow: 0px 0px 24px #000000e4;
-}
-
-.key-info {
-  align-content: space-between;
-  padding: 16px;
-  margin-top: 48px;
-  margin-bottom: 52px;
+  padding: 4px 8px 4px 8px;
   border-radius: 50px;
 }
 
-.logo {
-  margin-left: 4px;
-  cursor: pointer;
-}
-
-.burger {
-  margin-right: 4px;
+.header-icons {
   cursor: pointer;
 }
 
@@ -248,4 +267,87 @@ h2 {
 .on-sale {
   padding: 12px;
   margin: 20px 0px 20px 0px;
+}
+
+/* UNIQUE STYLES FOR PRE-EXISTING CLASSES */
+.section-tagline-margin {
+  margin-top: 64px;
+}
+
+.section-big-ticket-margin {
+  margin-top: 128px;
+  margin-bottom: 64px;
+}
+
+/* SLIDER FOR ON-SALE */
+.tag-list {
+  margin: 0;
+  padding-inline: 0;
+  list-style: none;
+}
+
+.tag-list li {
+  padding: 1rem;
+  background: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem -0.25rem #000;
+}
+
+.scroller {
+  max-width: 100%;
+  border: 3px solid lime;
+}
+
+.scroller__inner {
+  padding-block: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.scroller[data-animated="true"] {
+  overflow: hidden;
+
+  -webkit-mask: linear-gradient(
+    90deg,
+    transparent,
+    white 20%,
+    white 80%,
+    transparent
+  );
+
+  mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+}
+
+.scroller[data-animated="true"] .scroller__inner {
+  width: max-content;
+  flex-wrap: nowrap;
+  animation: scroll var(--_animation-duration, 40s) linear infinite
+    var(--_animation-direction, forwards);
+}
+
+.scroller[data-direction="right"] {
+  --_animation-direction: reverse;
+}
+
+.scroller[data-direction="left"] {
+  --_animation-direction: forwards;
+}
+
+.scroller[data-speed="slow"] {
+  --_animation-duration: 120s;
+}
+
+.scroller[data-speed="fast"] {
+  --_animation_duration: 20s;
+}
+
+@keyframes scroll {
+  to {
+    transform: translate(calc(-50% - 0.5rem));
+  }
+}
+
+.test {
+  background: lime !important;
 }
