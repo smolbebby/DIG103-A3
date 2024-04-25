@@ -27,9 +27,11 @@ function addAnimation() {
   scrollers.forEach((scroller) => {
     scroller.setAttribute("data-animated", true);
 
+    // looking for scroller inner property in html, then sends array
     const scrollerInner = scroller.querySelector(".scroller__inner");
     const scrollerContent = Array.from(scrollerInner.children);
 
+    // forEach loop to duplicate array/list alongside hide duplicates from screenreaders
     scrollerContent.forEach((item) => {
       const duplicatedItem = item.cloneNode(true);
       duplicatedItem.setAttribute("aria-hidden", true);
