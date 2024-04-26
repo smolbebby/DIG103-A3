@@ -62,86 +62,74 @@ h2 {
 
 .header {
   height: auto;
-  padding: 8px;
+  padding: 1rem;
   justify-content: space-between;
-  margin-left: 4px;
-  margin-right: 4px;
-}
-
-.top-section {
-  flex-flow: row wrap;
-  padding: 24px;
-  margin: 20px;
-}
-
-.more-info {
-  flex-flow: row wrap;
-  padding: 12px;
-  margin: 0px 20px 60px 20px;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 .section {
   flex-flow: row wrap;
-  padding: 12px;
-  margin: 18px 18px 18px 18px;
+  padding: 2rem;
+  margin: 0.5rem 0.5rem 0.5rem 0.5rem;
 }
 
 .key-info {
   align-content: space-between;
-  border-radius: 50px;
+  border-radius: 50%;
 }
 
 .footer {
   height: auto;
   flex-direction: column;
   justify-content: space-between;
-  padding: 24px 20px 24px 20px;
+  padding: 2rem 1.5rem 2rem 1.5rem;
 }
 
 /* COMPONENTS */
 .menu {
-  border-radius: 8px;
+  border-radius: 0.5rem;
   color: #f7f7f7;
   background-color: #3f0505;
-  box-shadow: 4px 4px #200101;
-  padding: 10px;
-  margin: 10px;
-  width: 300px;
-  height: 40px;
+  box-shadow: 0.25rem 0.25rem #200101;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  width: 20rem;
+  height: 2.5rem;
   font-size: large;
   text-shadow: 0 0 1px #fff, 0 0 15px #fc0303, 0 0 20px #fc0303,
     0 0 25px #fc0303, 0 0 30px #fc0303;
 }
 
 .links {
-  margin-top: 4px;
-  margin-bottom: 4px;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
   font-size: large;
   /*Update to no-longer need the pointer, and instead uses a/href and redirects to "404 Page"*/
   cursor: pointer;
 }
 
 .title {
-  padding: 16px;
-  margin: 0px 20px 2px 20px;
+  padding: 1rem;
+  margin: 0rem 4rem 0.25rem 4rem;
 }
 
 .section-text {
   color: #f7f7f7;
-  text-shadow: black 2px 4px;
+  text-shadow: black 0.25rem 0.25rem;
 }
 
 /* LINEUP AND COUNTRIES/LOCATIONS */
 .lineup-country {
   color: #f7f7f7;
-  width: 200px;
+  width: 12.5rem;
   height: auto;
   position: absolute;
   text-align: center;
   font-size: smaller;
 
-  left: 20px;
-  bottom: -1px;
+  left: 1.25rem;
+  bottom: -0.25rem;
 
   background: radial-gradient(
     circle,
@@ -158,8 +146,8 @@ h2 {
 
 /* TICKETS */
 .tickets-background {
-  border-radius: 100px;
-  box-shadow: 0px 0px 48px 24px #fc030390;
+  border-radius: 10rem;
+  box-shadow: 0rem 0rem 2.5rem 2rem #fc030390;
 }
 
 .tickets-button {
@@ -167,60 +155,60 @@ h2 {
   color: #f7f7f7;
   /*Update to no-longer need the pointer, and instead uses a/href and redirects to Artist Page(?)*/
   cursor: pointer;
-  border-radius: 100px;
+  border-radius: 10rem;
   text-align: center;
 }
 
 .big-ticket-button {
-  padding: 32px;
-  box-shadow: 0px 6px 2px #0000008b;
+  padding: 2rem;
+  box-shadow: 0rem 0.5rem 1rem #0000008b;
   text-shadow: 0 0 1px #fff, 0 0 15px #fc0303, 0 0 20px #fc0303,
     0 0 25px #fc0303, 0 0 30px #fc0303;
   font-size: x-large;
-  max-height: 8px;
-  min-width: 320px;
+  max-height: 1rem;
+  min-width: 20rem;
 }
 
 .mini-ticket {
-  margin: -8px 54px 4px 54px;
+  margin: -0.5rem 3rem 2rem 3rem;
 }
 
 .mini-ticket-button {
-  padding: 4px;
-  border-radius: 25px;
-  box-shadow: 0px 4px 2px #0000008b;
+  padding: 0.25rem;
+  border-radius: 2rem;
+  box-shadow: 0rem 0.25rem 0.5rem #0000008b;
   font-size: small;
 }
 
 /* DISPLAY COMPONENT AND SUBCOMPONENTS */
 .displays {
-  margin: 20px;
-  border-radius: 20px;
-  width: 240px;
-  height: 184px;
+  margin: 1.25rem;
+  border-radius: 2rem;
+  width: 15.5rem;
+  height: 11.75rem;
   position: relative;
   cursor: pointer;
 }
 
 .displays img {
-  border-radius: 18px;
-  width: 240px;
-  height: 184px;
+  border-radius: 1.5rem;
+  width: 15.5rem;
+  height: 11.75rem;
   border: #000000;
-  border-width: 3px;
+  border-width: 0.2rem;
   border-style: solid;
   object-fit: cover;
 }
 
 .displays-info {
   color: #f7f7f7;
-  width: 200px;
+  width: 13rem;
   height: auto;
   position: absolute;
   text-align: center;
 
-  left: 20px;
-  bottom: 12px;
+  left: 1rem;
+  bottom: 1rem;
 
   color: #f7f7f7;
   text-shadow: black 2px 4px;
@@ -236,12 +224,16 @@ h2 {
 .mobile-menu {
   width: 100vw;
   height: 100vh;
-  background-color: #000000e4;
+  background-color: #000000fd;
   position: absolute;
   z-index: 10;
   display: none;
+  align-content: center;
 }
 
+.mobile-menu-section {
+  justify-content: center;
+}
 /* CONTENTS */
 .main-logo {
   /* need to incorp in js - adjustable placement depending on screen size */
@@ -249,9 +241,9 @@ h2 {
 
 .background-shadows {
   background-color: #00000071;
-  box-shadow: 0px 0px 24px #000000e4;
-  padding: 4px 8px 4px 8px;
-  border-radius: 50px;
+  box-shadow: 0rem 0rem 2rem #000000e4;
+  padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+  border-radius: 10rem;
 }
 
 .header-icons {
@@ -265,18 +257,17 @@ h2 {
 }
 
 .on-sale {
-  padding: 12px;
-  margin: 20px 0px 20px 0px;
+  margin: 1.25rem 0rem 1.25rem 0rem;
 }
 
 /* UNIQUE STYLES FOR PRE-EXISTING CLASSES */
 .section-tagline-margin {
-  margin-top: 64px;
+  margin-top: 4rem;
 }
 
 .section-big-ticket-margin {
-  margin-top: 128px;
-  margin-bottom: 64px;
+  margin-top: 8rem;
+  margin-bottom: 4rem;
 }
 
 /* SLIDER FOR ON-SALE */
@@ -346,8 +337,4 @@ h2 {
   to {
     transform: translate(calc(-50% - 0.5rem));
   }
-}
-
-.test {
-  background: lime !important;
 }

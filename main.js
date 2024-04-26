@@ -14,6 +14,31 @@ function closeMobileMenu() {
   body.style.overflowY = "scroll";
 }
 
+// MOBILE TO DESKTOP MEDIA QUERY ASSISTANCE
+// const desktopHeader = document.querySelector(".desktop-header");
+// const mobileHeader = document.querySelector(".header");
+
+// function switchToDesktop() {
+//   mobileHeader.style.display = "hidden";
+//   desktopHeader.style.display = "flex";
+// }
+
+// TESTING MEDIA?
+const desktopHeader = document.querySelector(".desktop-header");
+const mobileHeader = document.querySelector(".header");
+
+function mobileToDesktop() {
+  window.matchMedia("(min-width: 750px").addEventListener(function (e) {
+    if (e.matches) {
+      desktopHeader.style.display = "flex";
+      mobileHeader.style.display = "none";
+    } else {
+      desktopHeader.style.display = "hidden";
+      mobileHeader.style.display = "flex";
+    }
+  });
+}
+
 // ON-SALE SLIDER
 const scrollers = document.querySelectorAll(".scroller");
 

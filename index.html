@@ -22,42 +22,57 @@
   <!-- WEBSITE CODE -->
   <body class="body">
     <!-- HEADER -->
-    <div class="mobile-menu" style="justify-content: space-between">
-      <div class="header-icons header">
-        <div class="utility menu" style="width: 32px; height: 32px">
-          <img
-            src="./assets/Logo/MiniLogo.svg"
-            alt="Mini Logo"
-            width="52px"
-            height="52px"
-          />
+    <div onopen="mobileToDesktop()">
+      <div class="mobile-menu" style="justify-content: space-between">
+        <div class="header-icons header">
+          <div class="utility menu" style="width: 32px; height: 32px">
+            <img
+              src="./assets/Logo/MiniLogo.svg"
+              alt="Mini Logo"
+              width="52px"
+              height="52px"
+            />
+          </div>
+        </div>
+        <div onclick="closeMobileMenu()" class="header-icons header">
+          <div class="utility menu" style="width: 32px; height: 32px">
+            <h2>
+              <i class="fa-solid fa-xmark"></i>
+            </h2>
+          </div>
         </div>
       </div>
-      <div onclick="closeMobileMenu()" class="header-icons header">
-        <div class="utility menu" style="width: 32px; height: 32px">
-          <h2>
-            <i class="fa-solid fa-xmark"></i>
-          </h2>
-        </div>
-      </div>
-    </div>
 
-    <div class="utility header">
-      <div class="header-icons">
-        <div class="utility menu" style="width: 32px; height: 32px">
-          <img
-            src="./assets/Logo/MiniLogo.svg"
-            alt="Mini Logo"
-            width="52px"
-            height="52px"
-          />
+      <div class="utility header">
+        <div class="header-icons">
+          <div class="utility menu" style="width: 32px; height: 32px">
+            <img
+              src="/assets/Logo/MiniLogo.svg"
+              alt="Mini Logo"
+              width="52px"
+              height="52px"
+            />
+          </div>
+        </div>
+        <div onclick="openMobileMenu()" class="header-icons">
+          <div class="utility menu" style="width: 32px; height: 32px">
+            <h2>
+              <i class="fa-solid fa-bars"></i>
+            </h2>
+          </div>
         </div>
       </div>
-      <div onclick="openMobileMenu()" class="header-icons">
-        <div class="utility menu" style="width: 32px; height: 32px">
-          <h2>
-            <i class="fa-solid fa-bars"></i>
-          </h2>
+
+      <div class="utility desktop-header">
+        <div class="header-icons">
+          <div class="utility menu" style="width: 32px; height: 32px">
+            <img
+              src="/assets/Logo/MiniLogo.svg"
+              alt="Mini Logo"
+              width="52px"
+              height="52px"
+            />
+          </div>
         </div>
       </div>
     </div>
@@ -65,7 +80,7 @@
     <div class="section">
       <div class="main-logo">
         <img
-          src="./assets/Logo/Mega.png"
+          src="/assets/Logo/Mega.png"
           style="width: 450px; height: 100px"
           alt="Main Logo on Home Page"
         />
@@ -104,7 +119,7 @@
       </div>
     </div>
     <!-- ON SALE SLIDER/SCROLLER -->
-    <div class="section">
+    <div class="section on-sale">
       <div class="scroller" data-direction="left" data-duration="fast">
         <ul class="tag-list scroller__inner">
           <li>HTML</li>
