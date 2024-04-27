@@ -8,7 +8,6 @@
     <title>Elektrik Eel Festival</title>
     <link rel="icon" type="image/x-icon" href="/assets/Logo/favicon.png" />
     <link rel="stylesheet" href="/css/main.css" />
-    <link rel="stylesheet" href="/css/desktop.css" />
     <script defer src="main.js"></script>
     <link
       rel="stylesheet"
@@ -22,212 +21,165 @@
   <!-- WEBSITE CODE -->
   <body class="body">
     <!-- HEADER -->
-    <div onopen="mobileToDesktop()">
-      <div class="mobile-menu" style="justify-content: space-between">
-        <div class="header-icons header">
-          <div class="utility menu" style="width: 32px; height: 32px">
-            <img
-              src="./assets/Logo/MiniLogo.svg"
-              alt="Mini Logo"
-              width="52px"
-              height="52px"
-            />
-          </div>
-        </div>
-        <div onclick="closeMobileMenu()" class="header-icons header">
-          <div class="utility menu" style="width: 32px; height: 32px">
-            <h2>
-              <i class="fa-solid fa-xmark"></i>
-            </h2>
-          </div>
-        </div>
-      </div>
-
-      <div class="utility header">
-        <div class="header-icons">
-          <div class="utility menu" style="width: 32px; height: 32px">
-            <img
-              src="/assets/Logo/MiniLogo.svg"
-              alt="Mini Logo"
-              width="52px"
-              height="52px"
-            />
-          </div>
-        </div>
-        <div onclick="openMobileMenu()" class="header-icons">
-          <div class="utility menu" style="width: 32px; height: 32px">
-            <h2>
-              <i class="fa-solid fa-bars"></i>
-            </h2>
-          </div>
-        </div>
-      </div>
-
-      <div class="utility desktop-header">
-        <div class="header-icons">
-          <div class="utility menu" style="width: 32px; height: 32px">
-            <img
-              src="/assets/Logo/MiniLogo.svg"
-              alt="Mini Logo"
-              width="52px"
-              height="52px"
-            />
-          </div>
+    <div class="mobile-menu">
+      <div onclick="closeMobileMenu()" class="burger">
+        <div class="menu" style="width: 32px; height: 32px">
+          <h2>
+            <i class="fa-solid fa-xmark"></i>
+          </h2>
         </div>
       </div>
     </div>
-    <!-- MAIN LOGO, TAGLINE, AND DATES -->
-    <div class="section">
-      <div class="main-logo">
+
+    <div class="header">
+      <div class="logo">
+        <div class="menu" style="width: 32px; height: 32px">
+          <img
+            src="./assets/Logo/MiniLogo.svg"
+            alt="Mini Logo"
+            width="52px"
+            height="52px"
+            style="margin-bottom: 4px"
+          />
+        </div>
+      </div>
+      <div onclick="openMobileMenu()" class="burger">
+        <div class="menu" style="width: 32px; height: 32px">
+          <h2>
+            <i class="fa-solid fa-bars"></i>
+          </h2>
+        </div>
+      </div>
+    </div>
+
+    <!-- MAIN LOGO, TAGLINE, DATES -->
+    <div class="topsection">
+      <div class="mainlogo">
         <img
-          src="/assets/Logo/Mega.png"
+          src="./assets/Logo/Mega.png"
           style="width: 450px; height: 100px"
-          alt="Main Logo on Home Page"
+          alt="Main Frontpage Logo"
         />
       </div>
-      <div class="section section-tagline-margin">
-        <div class="utility key-info">
-          <div class="section-text background-shadows">
-            3 Nights of premiere artistry and hyponotic craftsmanship
-          </div>
+      <div class="keyinfo">
+        <div class="text">
+          3 Nights of premiere artistry and hypnotic craftsmanship
         </div>
       </div>
-      <div class="section">
-        <div class="utility key-info">
-          <div
-            class="section-text background-shadows"
-            style="margin-bottom: 20px"
-          >
-            December 19th -> December 21st
-          </div>
+      <div class="keyinfo">
+        <div class="text" style="margin-bottom: 32px">
+          December 19th -> December 21st
         </div>
-        <div class="utility key-info">
-          <div class="section-text background-shadows">
-            Brisbane, Sydney, Melbourne
-          </div>
-        </div>
+        <div class="text">Brisbane, Sydney, Melbourne</div>
       </div>
-      <div class="section utility section-big-ticket-margin">
-        <div class="tickets-background">
-          <div
-            class="utility tickets-button big-ticket-button"
-            style="width: 320px"
-          >
-            <h2>Tickets</h2>
-          </div>
+      <div class="ticketsbackground" style="margin-top: 32px">
+        <div class="ticketsbutton" style="max-height: 8px; width: 320px">
+          <h2>Tickets</h2>
         </div>
       </div>
     </div>
-    <!-- ON SALE SLIDER/SCROLLER -->
-    <div
-      class="scroller background-shadows"
-      data-direction="right"
-      data-duration="fast"
-    >
-      <ul class="tag-list scroller__inner">
-        <li class="section-text">On Sale Now!</li>
-        <li class="section-text">On Sale Now!</li>
-        <li class="section-text">On Sale Now!</li>
-        <li class="section-text">On Sale Now!</li>
-      </ul>
+
+    <!-- ON SALE SLIDER/DIVIDER -->
+    <div class="onsale">
+      <div class="text">On Sale Now! On Sale Now! On Sale Now! On Sale N</div>
     </div>
 
     <!-- LINE-UP AND LOCATIONS -->
 
     <!-- LINE-UP -->
-    <div class="utility title">
-      <div class="utility menu">
+    <div class="title">
+      <div class="menu">
         <h2>Line-Up</h2>
       </div>
     </div>
-    <div class="utility section">
+    <div class="moreinfo">
       <div class="displays">
-        <div class="displays-info section-text">Richie Hawtin</div>
-        <div class="lineup-country section-text">Canada</div>
+        <div class="displaysinfo text">Richie Hawtin</div>
+        <div class="lineupcountry text">Canada</div>
         <img
-          src="/assets/RichieHawtin.png"
+          src="./assets/RichieHawtin.png"
           alt="Richie Hawtin looking to the left and down"
         />
       </div>
       <div class="displays">
-        <div class="displays-info section-text">Robert Hood</div>
-        <div class="lineup-country section-text">USA</div>
+        <div class="displaysinfo text">Robert Hood</div>
+        <div class="lineupcountry text">USA</div>
         <img
-          src="/assets/RobertHood.jpg"
-          alt="Robert Hood using the mixer with ne hand and looking down"
+          src="./assets/RobertHood.jpg"
+          alt="Robert Hood using the mixer with one hand and looking down"
         />
       </div>
       <div class="displays">
-        <div class="displays-info section-text">Surgeon</div>
-        <div class="lineup-country section-text">UK</div>
+        <div class="displaysinfo text">Surgeon</div>
+        <div class="lineupcountry text">UK</div>
         <img
-          src="/assets/Surgeon.PNG"
+          src="./assets/Surgeon.PNG"
           alt="Surgeon from the side working on the mixer with both hands"
         />
       </div>
       <div class="displays">
-        <div class="displays-info section-text">Oscar Mulero</div>
-        <div class="lineup-country section-text">Spain</div>
+        <div class="displaysinfo text">Oscar Mulero</div>
+        <div class="lineupcountry text">Spain</div>
         <img
-          src="/assets/OscarMulero.jpg"
+          src="./assets/OscarMulero.jpg"
           alt="Oscar Mulero fiddling with the disc on the mixer with both hands"
         />
       </div>
       <div class="displays">
-        <div class="displays-info section-text">Robah Whrume</div>
-        <div class="lineup-country section-text">Germany</div>
+        <div class="displaysinfo text">Robah Whrume</div>
+        <div class="lineupcountry text">Germany</div>
         <img
-          src="/assets/RobahWhrume.jpg"
+          src="./assets/RobahWhrume.jpg"
           alt="Robah Whrume from the back with his arms wide-spread, facing the crowd"
         />
       </div>
     </div>
 
     <!-- LOCATIONS -->
-    <div class="utility title">
-      <div class="utility menu">
+    <div class="title">
+      <div class="menu">
         <h2>Locations</h2>
       </div>
     </div>
-    <div class="utility section">
-      <div class="locations-group">
+    <div class="moreinfo">
+      <div class="locationsgroup">
         <div class="displays">
-          <div class="displays-info section-text">Brisbane</div>
+          <div class="displaysinfo text">Brisbane</div>
           <img
-            src="/assets/Brisbane.jpg"
+            src="./assets/Brisbane.jpg"
             alt="Wide-Eye view of Brisbane CBD, with Story Bridge"
           />
         </div>
-        <div class="mini-ticket tickets-background">
-          <div class="mini-ticket-button tickets-button">
+        <div class="miniticket">
+          <div class="miniticketbutton">
             <h2>Tickets</h2>
           </div>
         </div>
       </div>
-      <div class="locations-group">
+      <div class="locationsgroup">
         <div class="displays">
-          <div class="displays-info section-text">Sydney</div>
+          <div class="displaysinfo text">Sydney</div>
           <img
-            src="/assets/Sydney.jpg"
+            src="./assets/Sydney.jpg"
             alt="Sydney Harbour Bridge from a below angle at night"
           />
         </div>
-        <div class="mini-ticket tickets-background">
-          <div class="mini-ticket-button tickets-button">
+        <div class="miniticket">
+          <div class="miniticketbutton">
             <h2>Tickets</h2>
           </div>
         </div>
       </div>
-      <div class="locations-group">
+      <div class="locationsgroup">
         <div class="displays">
-          <div class="displays-info section-text">Melbourne</div>
+          <div class="displaysinfo text">Melbourne</div>
           <img
-            src="/assets/Melbourne.jpg"
+            src="./assets/Melbourne.jpg"
             alt="Flinders Street Train Station"
           />
         </div>
-        <div class="mini-ticket tickets-background">
-          <div class="mini-ticket-button tickets-button">
+        <div class="miniticket">
+          <div class="miniticketbutton">
             <h2>Tickets</h2>
           </div>
         </div>
@@ -235,22 +187,22 @@
     </div>
 
     <!-- FOOTER -->
-    <div class="utility footer">
-      <div class="main-logo" style="margin-bottom: 16px; cursor: pointer">
+    <div class="footer">
+      <div class="mainlogo" style="margin-bottom: 16px; cursor: pointer">
         <img
-          src="/assets/Logo/Mega.png"
-          alt="Footer Mega Logo"
+          src="./assets/Logo/Mega.png"
           style="width: 352px; height: 80px"
+          alt="Footer Logo"
         />
       </div>
-      <div class="links section-text">About</div>
-      <div class="links section-text">Line-up</div>
-      <div class="links section-text">Locations</div>
-      <div class="links section-text">Merch</div>
-      <div class="links section-text">Contact</div>
-      <div class="links section-text">Privacy Policy</div>
-      <div class="section-text" style="margin-top: 36px">Follow Us!</div>
-      <div class="links section-text" style="word-spacing: 8px">
+      <div class="links text">About</div>
+      <div class="links text">Line-Up</div>
+      <div class="links text">Locations</div>
+      <div class="links text">Merch</div>
+      <div class="links text">Contact</div>
+      <div class="links text">Privacy Policy</div>
+      <div class="text" style="margin-top: 36px">Follow Us!</div>
+      <div class="links text" style="word-spacing: 8px">
         <i class="fa-brands fa-facebook"></i>
         <i class="fa-brands fa-x-twitter"></i>
         <i class="fa-brands fa-instagram"></i>
@@ -258,12 +210,9 @@
         <i class="fa-brands fa-tiktok"></i>
         <i class="fa-brands fa-spotify"></i>
       </div>
-      <div class="utility signup">
-        <div class="tickets-background">
-          <div
-            class="utility tickets-button big-ticket-button"
-            style="max-height: 8px; width: 320px"
-          >
+      <div class="signup">
+        <div class="ticketsbackground">
+          <div class="ticketsbutton" style="max-height: 8px; width: 320px">
             <h2>Sign Up!</h2>
           </div>
         </div>
@@ -289,9 +238,7 @@
 “YouTube Icon | Font Awesome.” Fontawesome.com, fontawesome.com/icons/youtube?f=brands&s=solid
 
 Kottke, Jason. “Silkscreen.” Google Fonts, fonts.google.com/specimen/Silkscreen.
-Ozler, Isa. “Kode Mono.” Google Fonts, fonts.google.com/specimen/Kode+Mono.
-
-Powell, K. (2023, September 23). Create an infinite horizontal scroll animation. Www.youtube.com. https://www.youtube.com/watch?v=iLmBy-HKIAw -->
+Ozler, Isa. “Kode Mono.” Google Fonts, fonts.google.com/specimen/Kode+Mono. -->
 
 <!-- Assessment One Assets
 
