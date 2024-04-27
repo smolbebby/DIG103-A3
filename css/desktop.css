@@ -1,0 +1,23 @@
+/* @media only screen and (min-width: 750px) {
+  .header {
+    display: none;
+  }
+
+  .desktop-header {
+    display: flex;
+  }
+} */
+
+.desktop-header {
+  display: none;
+  height: auto;
+  padding: 8px;
+  justify-content: space-between;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+/* change padding on main logo to be closer to center */
+
+/* change padding(?)/location of tagline to be closer to right-side */
+
+/* change dates to larger font-size */

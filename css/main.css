@@ -1,5 +1,4 @@
 /* HIDE UGLY SCROLLBAR IN ALL BROWSERS */
-
 :root::-webkit-scrollbar {
   display: none;
 }
@@ -10,7 +9,6 @@
 }
 
 /* FONTS */
-
 @import url("https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap");
 
 @font-face {
@@ -34,8 +32,13 @@
   font-style: normal;
 }
 
-/* CONTAINERS */
+h2 {
+  font-family: "Silkscreen", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
+/* CONTAINERS */
 * {
   margin: 0;
 }
@@ -47,101 +50,86 @@
   background-size: cover;
   background-position: center;
   font-family: "KodeMono", monospace;
+  overflow-y: scroll;
+}
+
+.utility {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .header {
   height: auto;
-  padding: 8px 8px 8px 8px;
-  /* margin-top: 16px; */
-  display: flex;
+  padding: 1rem;
   justify-content: space-between;
-  align-items: center;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 
-.topsection {
-  display: flex;
+.section {
   flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
-  padding: 24px;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  padding: 2rem;
+  margin: 0.5rem 0.5rem 0.5rem 0.5rem;
 }
 
-.moreinfo {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  align-items: center;
-  padding: 12px;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-bottom: 60px;
+.key-info {
+  align-content: space-between;
+  border-radius: 50%;
 }
 
 .footer {
   height: auto;
-  display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
-  padding: 24px 20px 24px 20px;
+  padding: 2rem 1.5rem 2rem 1.5rem;
 }
 
 /* COMPONENTS */
-
 .menu {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   color: #f7f7f7;
   background-color: #3f0505;
-  box-shadow: 4px 4px #200101;
-  padding: 10px;
-  margin: 10px;
-  width: 300px;
-  height: 40px;
+  box-shadow: 0.25rem 0.25rem #200101;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  width: 20rem;
+  height: 2.5rem;
   font-size: large;
   text-shadow: 0 0 1px #fff, 0 0 15px #fc0303, 0 0 20px #fc0303,
     0 0 25px #fc0303, 0 0 30px #fc0303;
 }
 
 .links {
-  margin-top: 4px;
-  margin-bottom: 4px;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
   font-size: large;
+  /*Update to no-longer need the pointer, and instead uses a/href and redirects to "404 Page"*/
   cursor: pointer;
 }
 
 .title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 16px;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-bottom: 2px;
+  padding: 1rem;
+  margin: 0rem 4rem 0.25rem 4rem;
 }
 
-.text {
+.section-text {
   color: #f7f7f7;
-  text-shadow: black 2px 4px;
+  text-shadow: black 0.25rem 0.25rem;
 }
 
-.lineupcountry {
+/* LINEUP AND COUNTRIES/LOCATIONS */
+.lineup-country {
   color: #f7f7f7;
-  width: 200px;
+  width: 12.5rem;
   height: auto;
   position: absolute;
   text-align: center;
   font-size: smaller;
 
-  left: 20px;
-  bottom: -1px;
+  left: 1.25rem;
+  bottom: -0.25rem;
 
   background: radial-gradient(
     circle,
@@ -150,83 +138,77 @@
   );
 }
 
-/* TICKETS */
-
-.ticketsbackground {
-  display: flex;
-  justify-content: center;
+.locations-group {
+  display: grid;
   align-items: center;
-  border-radius: 100px;
-  box-shadow: 0px 0px 48px 24px #fc030390;
+  align-content: center;
 }
 
-.ticketsbutton {
+/* TICKETS */
+.tickets-background {
+  border-radius: 10rem;
+  box-shadow: 0rem 0rem 2.5rem 2rem #fc030390;
+}
+
+.tickets-button {
   background-color: #3f0505;
   color: #f7f7f7;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 32px;
+  /*Update to no-longer need the pointer, and instead uses a/href and redirects to Artist Page(?)*/
   cursor: pointer;
-  border-radius: 100px;
-  box-shadow: 0px 6px 2px #0000008b;
+  border-radius: 10rem;
+  text-align: center;
+}
+
+.big-ticket-button {
+  padding: 2rem;
+  box-shadow: 0rem 0.5rem 1rem #0000008b;
   text-shadow: 0 0 1px #fff, 0 0 15px #fc0303, 0 0 20px #fc0303,
     0 0 25px #fc0303, 0 0 30px #fc0303;
   font-size: x-large;
+  max-height: 1rem;
+  min-width: 20rem;
 }
 
-.miniticket {
-  margin-top: -8px;
-  margin-bottom: 4px;
-  margin-left: 54px;
-  margin-right: 54px;
-  text-align: center;
-  border-radius: 100px;
-  box-shadow: 0px 0px 48px 24px #fc030390;
+.mini-ticket {
+  margin: -0.5rem 3rem 2rem 3rem;
 }
 
-.miniticketbutton {
-  background-color: #3f0505;
-  color: #f7f7f7;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 4px;
-  cursor: pointer;
-  border-radius: 25px;
-  box-shadow: 0px 4px 2px #0000008b;
+.mini-ticket-button {
+  padding: 0.25rem;
+  border-radius: 2rem;
+  box-shadow: 0rem 0.25rem 0.5rem #0000008b;
   font-size: small;
 }
 
 /* DISPLAY COMPONENT AND SUBCOMPONENTS */
-
 .displays {
-  margin: 20px;
-  border-radius: 20px;
-  width: 240px;
-  height: 184px;
+  margin: 1.25rem;
+  border-radius: 2rem;
+  width: 15.5rem;
+  height: 11.75rem;
   position: relative;
   cursor: pointer;
 }
 
 .displays img {
-  border-radius: 18px;
-  width: 240px;
-  height: 184px;
+  border-radius: 1.5rem;
+  width: 15.5rem;
+  height: 11.75rem;
   border: #000000;
-  border-width: 3px;
+  border-width: 0.2rem;
   border-style: solid;
+  object-fit: cover;
 }
 
-.displaysinfo {
+.displays-info {
   color: #f7f7f7;
-  width: 200px;
+  width: 13rem;
   height: auto;
   position: absolute;
   text-align: center;
 
-  left: 20px;
-  bottom: 12px;
+  left: 1rem;
+  bottom: 1rem;
 
   color: #f7f7f7;
   text-shadow: black 2px 4px;
@@ -238,78 +220,107 @@
   );
 }
 
-/* CONTENT */
-
-.mainlogo {
-  display: flex;
-  margin-left: 24px;
-  margin-right: 24px;
-  margin-bottom: 48px;
+/* MOBILE MENU */
+.mobile-menu {
+  width: 100vw;
+  height: 100vh;
+  background-color: #000000fd;
+  position: absolute;
+  z-index: 10;
+  display: none;
+  align-content: center;
 }
 
-.keyinfo {
-  background-color: #00000071;
-  box-shadow: 0px 0px 24px #000000e4;
-  display: flex;
-  flex-flow: row wrap;
-  align-content: space-between;
-  text-align: center;
+.mobile-menu-section {
   justify-content: center;
-  padding: 16px;
-  margin-top: 48px;
-  margin-bottom: 52px;
-  border-radius: 50px;
+}
+/* CONTENTS */
+.main-logo {
+  /* need to incorp in js - adjustable placement depending on screen size */
 }
 
-.logo {
-  margin-left: 4px;
-  cursor: pointer;
+.background-shadows {
+  background-color: #00000071;
+  box-shadow: 0rem 0rem 2rem #000000e4;
+  padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+  border-radius: 10rem;
 }
 
-.burger {
-  margin-right: 4px;
+.header-icons {
   cursor: pointer;
 }
 
 .signup {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 28px;
   margin-top: 24px;
   margin-bottom: 12px;
 }
 
-.locationsgroup {
-  display: grid;
-  align-items: center;
-  align-content: center;
+/* UNIQUE STYLES FOR PRE-EXISTING CLASSES */
+.section-tagline-margin {
+  margin-top: 4rem;
 }
 
-h2 {
-  font-family: "Silkscreen", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+.section-big-ticket-margin {
+  margin-top: 8rem;
+  margin-bottom: 4rem;
 }
 
-.onsale {
-  background-color: #00000071;
-  box-shadow: 0px 0px 24px #000000e4;
+/* SLIDER FOR ON-SALE */
+.tag-list {
+  margin: 0;
+  padding-inline: 0;
+  list-style: none;
+}
+
+.tag-list li {
+  font-size: large;
+  padding: 0.25rem;
+}
+
+.scroller {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.scroller__inner {
+  padding-block: 0.5rem;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 12px;
-  margin-left: 0px;
-  margin-right: 0px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
-.mobile-menu {
-  width: 100vw;
-  height: 100vh;
-  background-color: #000000e4;
-  position: absolute;
-  z-index: 10;
-  display: none;
+.scroller[data-animated="true"] {
+  overflow: hidden;
+}
+
+/* direction and speed of scroller */
+.scroller[data-direction="right"] {
+  --_animation-direction: reverse;
+}
+
+.scroller[data-direction="left"] {
+  --_animation-direction: forwards;
+}
+
+.scroller[data-duration="fast"] {
+  --_animation-duration: 5s;
+}
+
+.scroller[data-duration="slow"] {
+  --_animation-duration: 30s;
+}
+
+/* animation for the scroller to move */
+.scroller[data-animated="true"] .scroller__inner {
+  width: max-content;
+  flex-wrap: nowrap;
+  animation: scroll var(--_animation-duration, 40s)
+    var(--_animation-direction, forwards) linear infinite;
+}
+
+@keyframes scroll {
+  to {
+    transform: translate(calc(-75% + 95.2rem));
+  }
 }
