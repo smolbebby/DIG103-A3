@@ -47,13 +47,16 @@ if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
   addAnimation();
 }
 
+//display data animation (if the above matches to user preference of no reduce)
 function addAnimation() {
   scrollers.forEach((scroller) => {
     scroller.setAttribute("data-animated", true);
 
+    //look for scrollerInner property in the html, then sends an array
     const scrollerInner = document.querySelector(".scroller__inner");
     const scrollerContent = Array.from(scrollerInner.children);
 
+    //forEach loop to duplicate array alongside hide the duplicates from screenreaders
     scrollerContent.forEach((item) => {
       const duplicatedItem = item.cloneNode(true);
       duplicatedItem.setAttribute("aria-hidden", true);

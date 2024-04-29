@@ -1,6 +1,8 @@
 /* HIDE UGLY SCROLLBAR IN ALL BROWSERS */
 :root::-webkit-scrollbar {
   display: none;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 :root {
@@ -32,19 +34,20 @@
   font-style: normal;
 }
 
-h2 {
+.secondary-font {
   font-family: "Silkscreen", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
-/* CONTAINERS */
+/* UTILITIES */
 * {
   margin: 0;
+  box-sizing: border-box;
 }
 
 .body {
-  background-image: url("../assets/Background.jpg");
+  background-image: url("/assets/Background.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -53,220 +56,111 @@ h2 {
   overflow-y: scroll;
 }
 
-.utility {
+.flex {
   display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.justify-align {
   justify-content: center;
   align-items: center;
   text-align: center;
 }
 
-.header {
+header {
   height: auto;
   padding: 1rem;
   justify-content: space-between;
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
+  margin-block: 0.5rem;
 }
 
-.section {
+section {
   flex-flow: row wrap;
   padding: 2rem;
-  margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+  margin: 0.5rem;
 }
 
-.key-info {
-  align-content: space-between;
-  border-radius: 50%;
-}
-
-.footer {
+footer {
   height: auto;
   flex-direction: column;
   justify-content: space-between;
   padding: 2rem 1.5rem 2rem 1.5rem;
 }
 
-/* COMPONENTS */
-.menu {
-  border-radius: 0.5rem;
+a {
   color: #f7f7f7;
-  background-color: #3f0505;
-  box-shadow: 0.25rem 0.25rem #200101;
-  padding: 0.5rem;
-  margin: 0.5rem;
-  width: 20rem;
-  height: 2.5rem;
-  font-size: large;
-  text-shadow: 0 0 1px #fff, 0 0 15px #fc0303, 0 0 20px #fc0303,
-    0 0 25px #fc0303, 0 0 30px #fc0303;
+  text-decoration: none;
 }
-
-.links {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-  font-size: large;
-  /*Update to no-longer need the pointer, and instead uses a/href and redirects to "404 Page"*/
-  cursor: pointer;
-}
-
-.title {
-  padding: 1rem;
-  margin: 0rem 4rem 0.25rem 4rem;
-}
-
+/* COMPONENTS */
 .section-text {
   color: #f7f7f7;
   text-shadow: black 0.25rem 0.25rem;
 }
 
-/* LINEUP AND COUNTRIES/LOCATIONS */
-.lineup-country {
-  color: #f7f7f7;
-  width: 12.5rem;
-  height: auto;
-  position: absolute;
-  text-align: center;
-  font-size: smaller;
-
-  left: 1.25rem;
-  bottom: -0.25rem;
-
-  background: radial-gradient(
-    circle,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(9, 9, 121, 0) 50%
-  );
-}
-
-.locations-group {
-  display: grid;
-  align-items: center;
-  align-content: center;
-}
-
-/* TICKETS */
-.tickets-background {
-  border-radius: 10rem;
-  box-shadow: 0rem 0rem 2.5rem 2rem #fc030390;
-}
-
-.tickets-button {
-  background-color: #3f0505;
-  color: #f7f7f7;
-  /*Update to no-longer need the pointer, and instead uses a/href and redirects to Artist Page(?)*/
-  cursor: pointer;
-  border-radius: 10rem;
-  text-align: center;
-}
-
-.big-ticket-button {
-  padding: 2rem;
-  box-shadow: 0rem 0.5rem 1rem #0000008b;
-  text-shadow: 0 0 1px #fff, 0 0 15px #fc0303, 0 0 20px #fc0303,
-    0 0 25px #fc0303, 0 0 30px #fc0303;
-  font-size: x-large;
-  max-height: 1rem;
-  min-width: 20rem;
-}
-
-.mini-ticket {
-  margin: -0.5rem 3rem 2rem 3rem;
-}
-
-.mini-ticket-button {
-  padding: 0.25rem;
-  border-radius: 2rem;
-  box-shadow: 0rem 0.25rem 0.5rem #0000008b;
-  font-size: small;
-}
-
-/* DISPLAY COMPONENT AND SUBCOMPONENTS */
-.displays {
-  margin: 1.25rem;
-  border-radius: 2rem;
-  width: 15.5rem;
-  height: 11.75rem;
-  position: relative;
-  cursor: pointer;
-}
-
-.displays img {
-  border-radius: 1.5rem;
-  width: 15.5rem;
-  height: 11.75rem;
-  border: #000000;
-  border-width: 0.2rem;
-  border-style: solid;
-  object-fit: cover;
-}
-
-.displays-info {
-  color: #f7f7f7;
-  width: 13rem;
-  height: auto;
-  position: absolute;
-  text-align: center;
-
-  left: 1rem;
-  bottom: 1rem;
-
-  color: #f7f7f7;
-  text-shadow: black 2px 4px;
-
-  background: radial-gradient(
-    circle,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(9, 9, 121, 0) 50%
-  );
-}
-
-/* MOBILE MENU */
-.mobile-menu {
-  width: 100vw;
-  height: 100vh;
-  background-color: #000000fd;
-  position: absolute;
-  z-index: 10;
-  display: none;
-  align-content: center;
-}
-
-.mobile-menu-section {
-  justify-content: center;
-}
-/* CONTENTS */
-.main-logo {
-  /* need to incorp in js - adjustable placement depending on screen size */
-}
-
-.background-shadows {
-  background-color: #00000071;
-  box-shadow: 0rem 0rem 2rem #000000e4;
-  padding: 0.25rem 0.5rem 0.25rem 0.5rem;
-  border-radius: 10rem;
-}
-
-.header-icons {
-  cursor: pointer;
-}
-
-.signup {
-  padding: 28px;
-  margin-top: 24px;
-  margin-bottom: 12px;
-}
-
-/* UNIQUE STYLES FOR PRE-EXISTING CLASSES */
-.section-tagline-margin {
-  margin-top: 4rem;
+.section-key-info-margin {
+  margin-block: 4rem;
 }
 
 .section-big-ticket-margin {
-  margin-top: 8rem;
-  margin-bottom: 4rem;
+  margin-block: 8rem 4rem;
 }
 
-/* SLIDER FOR ON-SALE */
+.info-header {
+  border-radius: 0.5rem;
+  color: #f7f7f7;
+  background-color: #3f0505;
+  box-shadow: 0.25rem 0.25rem #200101;
+  padding: 0.75rem;
+  margin: 0.5rem;
+  width: 20rem;
+  height: 2.75rem;
+}
+
+.neon-text {
+  text-shadow: 0 0 1px #fff, 0 0 15px #fc0303, 0 0 20px #fc0303,
+    0 0 25px #fc0303, 0 0 30px #fc0303;
+}
+
+.links {
+  margin-block: 0.3rem;
+  font-size: large;
+  /* update to no-longer require pointer and instead use <a> */
+  cursor: pointer;
+}
+
+.info-title {
+  padding: 1rem;
+  font-size: x-large;
+}
+
+.header-key-info {
+  align-content: space-between;
+  border-radius: 50%;
+}
+
+.background-shadow {
+  background-color: #00000071;
+  box-shadow: 0rem 0rem 2rem #000000e4;
+  padding: 0.5rem 0.5rem;
+  border-radius: 10rem;
+  max-width: 36rem;
+}
+
+.signup-spacing {
+  padding: 28px;
+  margin-block: 24px 12px;
+}
+
+/* IMG ADJUSTMENTS */
+.main-logo {
+  width: 345px;
+  height: 80px;
+}
+
+/* ON SALE SCROLLER COMPONENT*/
 .tag-list {
   margin: 0;
   padding-inline: 0;
@@ -285,7 +179,6 @@ h2 {
 
 .scroller__inner {
   padding-block: 0.5rem;
-  display: flex;
   flex-wrap: wrap;
   gap: 1rem;
 }
@@ -321,6 +214,97 @@ h2 {
 
 @keyframes scroll {
   to {
-    transform: translate(calc(-75% + 95.2rem));
+    transform: translate(calc(-75% + 95.25rem));
   }
+}
+
+/* DISPLAY COMPONENT AND SUBCOMPONENTS */
+.display {
+  margin: 1.25rem;
+  border-radius: 2rem;
+  width: 15.5rem;
+  height: 11.75rem;
+  position: relative;
+  /*eventually remove pointer with usage of a instead?*/
+  cursor: pointer;
+}
+
+.display img {
+  border-radius: 1.5rem;
+  width: 15.5rem;
+  height: 11.75rem;
+  border: #000000;
+  border-width: 0.2rem;
+  border-style: solid;
+  object-fit: cover;
+}
+
+.display-info {
+  color: #f7f7f7;
+  height: auto;
+  position: absolute;
+  text-align: center;
+}
+
+.display-shadow {
+  background: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 1) 5%,
+    rgba(255, 255, 255, 0) 70%
+  );
+}
+
+.display-artist {
+  color: #f7f7f7;
+  width: 13rem;
+
+  left: 1rem;
+  bottom: 1.2rem;
+}
+
+.display-country {
+  color: #f7f7f7;
+  width: 12.5rem;
+  font-size: smaller;
+
+  left: 1.5rem;
+  bottom: 0.25rem;
+}
+
+.display-locations-margin {
+  margin-block: 5rem;
+}
+
+/* TICKETS */
+.ticket-background {
+  border-radius: 10rem;
+  box-shadow: 0rem 0rem 2.5rem 2rem #fc030390;
+}
+
+.ticket-btn {
+  background-color: #3f0505;
+  color: #f7f7f7;
+  cursor: pointer;
+  border-radius: 10rem;
+  text-align: center;
+}
+
+.big-ticket-btn {
+  padding: 2rem;
+  box-shadow: 0rem 0.5rem 1rem #0000008b;
+  max-height: 1rem;
+  width: 24rem;
+  font-size: xx-large;
+}
+
+.mini-ticket-margin {
+  margin: -0.5rem 3rem 2rem 3rem;
+}
+
+.mini-ticket-btn {
+  padding-inline: 3rem;
+  padding-block: 0.5rem;
+  border-radius: 2rem;
+  box-shadow: 0rem 0.25rem 0.5rem #0000008b;
+  font-size: small;
 }

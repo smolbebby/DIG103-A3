@@ -21,110 +21,52 @@
 
   <!-- WEBSITE CODE -->
   <body class="body">
-    <!-- HEADER -->
-    <div onopen="mobileToDesktop()">
-      <div class="mobile-menu" style="justify-content: space-between">
-        <div class="header-icons header">
-          <div class="utility menu" style="width: 32px; height: 32px">
-            <img
-              src="./assets/Logo/MiniLogo.svg"
-              alt="Mini Logo"
-              width="52px"
-              height="52px"
-            />
-          </div>
-        </div>
-        <div onclick="closeMobileMenu()" class="header-icons header">
-          <div class="utility menu" style="width: 32px; height: 32px">
-            <h2>
-              <i class="fa-solid fa-xmark"></i>
-            </h2>
-          </div>
-        </div>
-      </div>
-
-      <div class="utility header">
-        <div class="header-icons">
-          <div class="utility menu" style="width: 32px; height: 32px">
-            <img
-              src="/assets/Logo/MiniLogo.svg"
-              alt="Mini Logo"
-              width="52px"
-              height="52px"
-            />
-          </div>
-        </div>
-        <div onclick="openMobileMenu()" class="header-icons">
-          <div class="utility menu" style="width: 32px; height: 32px">
-            <h2>
-              <i class="fa-solid fa-bars"></i>
-            </h2>
-          </div>
-        </div>
-      </div>
-
-      <div class="utility desktop-header">
-        <div class="header-icons">
-          <div class="utility menu" style="width: 32px; height: 32px">
-            <img
-              src="/assets/Logo/MiniLogo.svg"
-              alt="Mini Logo"
-              width="52px"
-              height="52px"
-            />
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- MAIN LOGO, TAGLINE, AND DATES -->
-    <div class="section">
-      <div class="main-logo">
+    <!-- HEADER - LOGO, TAGLINE, KEY INFO AND TICKETS -->
+    <header>
+      <nav></nav>
+      <section class="flex justify-align">
         <img
           src="/assets/Logo/Mega.png"
-          style="width: 450px; height: 100px"
-          alt="Main Logo on Home Page"
+          alt="Main Logo on the Home Page"
+          class="main-logo"
         />
-      </div>
-      <div class="section section-tagline-margin">
-        <div class="utility key-info">
-          <div class="section-text background-shadows">
-            3 Nights of premiere artistry and hyponotic craftsmanship
+      </section>
+      <section class="section-key-info-margin background-shadow">
+        <div class="header-key-info flex justify-align section-text">
+          3 Nights of premiere artistry and hypnotic craftsmanship
+        </div>
+      </section>
+      <section
+        class="section-key-info-margin background-shadow justify-align"
+        style="line-height: 2rem"
+      >
+        <div class="header-key-info flex justify-align section-text">
+          December 19th -> December 21st
+        </div>
+        <div class="header-key-info flex justify-align section-text">
+          Brisbane, Sydney, Melbourne
+        </div>
+      </section>
+      <section class="section-big-ticket-margin flex justify-align">
+        <div class="ticket-background">
+          <div class="ticket-btn big-ticket-btn flex justify-align">
+            <a
+              class="secondary-font neon-text"
+              href="https://premier.ticketek.com.au/"
+              >Tickets</a
+            >
           </div>
         </div>
-      </div>
-      <div class="section">
-        <div class="utility key-info">
-          <div
-            class="section-text background-shadows"
-            style="margin-bottom: 20px"
-          >
-            December 19th -> December 21st
-          </div>
-        </div>
-        <div class="utility key-info">
-          <div class="section-text background-shadows">
-            Brisbane, Sydney, Melbourne
-          </div>
-        </div>
-      </div>
-      <div class="section utility section-big-ticket-margin">
-        <div class="tickets-background">
-          <div
-            class="utility tickets-button big-ticket-button"
-            style="width: 320px"
-          >
-            <h2>Tickets</h2>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- ON SALE SLIDER/SCROLLER -->
+      </section>
+    </header>
+
+    <!-- ON SALE SCROLLER -->
     <div
-      class="scroller background-shadows"
+      class="scroller background-shadow"
       data-direction="right"
       data-duration="fast"
     >
-      <ul class="tag-list scroller__inner">
+      <ul class="tag-list scroller__inner flex">
         <li class="section-text">On Sale Now!</li>
         <li class="section-text">On Sale Now!</li>
         <li class="section-text">On Sale Now!</li>
@@ -132,143 +74,180 @@
       </ul>
     </div>
 
-    <!-- LINE-UP AND LOCATIONS -->
-
     <!-- LINE-UP -->
-    <div class="utility title">
-      <div class="utility menu">
-        <h2>Line-Up</h2>
+    <section class="flex justify-align">
+      <div
+        class="info-header info-title secondary-font flex justify-align neon-text"
+      >
+        Line-Up
       </div>
-    </div>
-    <div class="utility section">
-      <div class="displays">
-        <div class="displays-info section-text">Richie Hawtin</div>
-        <div class="lineup-country section-text">Canada</div>
+    </section>
+    <section class="flex justify-align">
+      <a href="line-up.html" class="display">
+        <div class="display-info display-artist section-text display-shadow">
+          Richie Hawtin
+        </div>
+        <div class="display-info display-country section-text display-shadow">
+          Canada
+        </div>
+
         <img
           src="/assets/RichieHawtin.png"
           alt="Richie Hawtin looking to the left and down"
         />
-      </div>
-      <div class="displays">
-        <div class="displays-info section-text">Robert Hood</div>
-        <div class="lineup-country section-text">USA</div>
+      </a>
+      <a href="line-up.html" class="display">
+        <div class="display-info display-artist section-text display-shadow">
+          Robert Hood
+        </div>
+        <div class="display-info display-country section-text display-shadow">
+          USA
+        </div>
+
         <img
           src="/assets/RobertHood.jpg"
-          alt="Robert Hood using the mixer with ne hand and looking down"
+          alt="Robert Hood using the mixer with one hand and looking down"
         />
-      </div>
-      <div class="displays">
-        <div class="displays-info section-text">Surgeon</div>
-        <div class="lineup-country section-text">UK</div>
+      </a>
+      <a href="line-up.html" class="display">
+        <div class="display-info display-artist section-text display-shadow">
+          Surgeon
+        </div>
+        <div class="display-info display-country section-text display-shadow">
+          UK
+        </div>
         <img
           src="/assets/Surgeon.PNG"
-          alt="Surgeon from the side working on the mixer with both hands"
+          alt="Surgeon from the right side working on the mixer with both hands"
         />
-      </div>
-      <div class="displays">
-        <div class="displays-info section-text">Oscar Mulero</div>
-        <div class="lineup-country section-text">Spain</div>
+      </a>
+      <a href="line-up.html" class="display">
+        <div class="display-info display-artist section-text display-shadow">
+          Oscar Mulero
+        </div>
+        <div class="display-info display-country section-text display-shadow">
+          Spain
+        </div>
         <img
           src="/assets/OscarMulero.jpg"
           alt="Oscar Mulero fiddling with the disc on the mixer with both hands"
         />
-      </div>
-      <div class="displays">
-        <div class="displays-info section-text">Robah Whrume</div>
-        <div class="lineup-country section-text">Germany</div>
+      </a>
+      <a href="line-up.html" class="display">
+        <div class="display-info display-artist section-text display-shadow">
+          Robah Whrume
+        </div>
+        <div class="display-info display-country section-text display-shadow">
+          Germany
+        </div>
         <img
           src="/assets/RobahWhrume.jpg"
-          alt="Robah Whrume from the back with his arms wide-spread, facing the crowd"
+          alt="Robah Whrume from behind with his arms wide-spread, facing the crowd"
         />
-      </div>
-    </div>
+      </a>
+    </section>
 
     <!-- LOCATIONS -->
-    <div class="utility title">
-      <div class="utility menu">
-        <h2>Locations</h2>
+    <section class="flex justify-align">
+      <div
+        class="info-header info-title secondary-font flex justify-align neon-text"
+      >
+        Locations
       </div>
-    </div>
-    <div class="utility section">
-      <div class="locations-group">
-        <div class="displays">
-          <div class="displays-info section-text">Brisbane</div>
+    </section>
+    <section class="flex justify-align">
+      <div class="display-location-margin">
+        <a href="404.html" class="display">
+          <div class="display-info display-country section-text display-shadow">
+            Brisbane
+          </div>
           <img
             src="/assets/Brisbane.jpg"
             alt="Wide-Eye view of Brisbane CBD, with Story Bridge"
           />
-        </div>
-        <div class="mini-ticket tickets-background">
-          <div class="mini-ticket-button tickets-button">
-            <h2>Tickets</h2>
+        </a>
+        <div class="ticket-background mini-ticket-margin">
+          <div class="ticket-btn mini-ticket-btn flex justify-align">
+            <a class="secondary-font" href="https://premier.ticketek.com.au/"
+              >Tickets</a
+            >
           </div>
         </div>
       </div>
-      <div class="locations-group">
-        <div class="displays">
-          <div class="displays-info section-text">Sydney</div>
+      <div class="display-location-margin">
+        <a href="404.html" class="display">
+          <div class="display-info display-country section-text display-shadow">
+            Sydney
+          </div>
           <img
             src="/assets/Sydney.jpg"
             alt="Sydney Harbour Bridge from a below angle at night"
           />
-        </div>
-        <div class="mini-ticket tickets-background">
-          <div class="mini-ticket-button tickets-button">
-            <h2>Tickets</h2>
+        </a>
+        <div class="ticket-background mini-ticket-margin">
+          <div class="ticket-btn mini-ticket-btn flex justify-align">
+            <a class="secondary-font" href="https://premier.ticketek.com.au/"
+              >Tickets</a
+            >
           </div>
         </div>
       </div>
-      <div class="locations-group">
-        <div class="displays">
-          <div class="displays-info section-text">Melbourne</div>
+      <div class="display-location-margin">
+        <a href="404.html" class="display">
+          <div class="display-info display-country section-text display-shadow">
+            Melbourne
+          </div>
           <img
             src="/assets/Melbourne.jpg"
             alt="Flinders Street Train Station"
           />
-        </div>
-        <div class="mini-ticket tickets-background">
-          <div class="mini-ticket-button tickets-button">
-            <h2>Tickets</h2>
+        </a>
+        <div class="ticket-background mini-ticket-margin">
+          <div class="ticket-btn mini-ticket-btn flex justify-align">
+            <a class="secondary-font" href="https://premier.ticketek.com.au/"
+              >Tickets</a
+            >
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- FOOTER -->
-    <div class="utility footer">
-      <div class="main-logo" style="margin-bottom: 16px; cursor: pointer">
+    <footer class="flex justify-align">
+      <div class="main-logo">
         <img
           src="/assets/Logo/Mega.png"
           alt="Footer Mega Logo"
-          style="width: 352px; height: 80px"
+          style="width: 345px; height: 75px"
         />
       </div>
-      <div class="links section-text">About</div>
-      <div class="links section-text">Line-up</div>
-      <div class="links section-text">Locations</div>
-      <div class="links section-text">Merch</div>
-      <div class="links section-text">Contact</div>
-      <div class="links section-text">Privacy Policy</div>
-      <div class="section-text" style="margin-top: 36px">Follow Us!</div>
-      <div class="links section-text" style="word-spacing: 8px">
-        <i class="fa-brands fa-facebook"></i>
-        <i class="fa-brands fa-x-twitter"></i>
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-youtube"></i>
-        <i class="fa-brands fa-tiktok"></i>
-        <i class="fa-brands fa-spotify"></i>
+      <a href="404.html" class="links section-text">About</a>
+      <a href="line-up.html" class="links section-text">Line-Up</a>
+      <a href="404.html" class="links section-text">Locations</a>
+      <a href="404.html" class="links section-text">Merch</a>
+      <a href="404.html" class="links section-text">Contact</a>
+      <a href="404.html" class="links section-text">Privacy Policy</a>
+      <div class="section-text" style="margin-top: 2rem">Follow Us!</div>
+      <div class="links section-text" style="word-spacing: 0.5rem">
+        <a href="" class="fa-brands fa-facebook"></a>
+        <a href="" class="fa-brands fa-x-twitter"></a>
+        <a href="" class="fa-brands fa-instagram"></a>
+        <a href="" class="fa-brands fa-youtube"></a>
+        <a href="" class="fa-brands fa-tiktok"></a>
+        <a href="" class="fa-brands fa-spotify"></a>
       </div>
-      <div class="utility signup">
-        <div class="tickets-background">
-          <div
-            class="utility tickets-button big-ticket-button"
-            style="max-height: 8px; width: 320px"
-          >
-            <h2>Sign Up!</h2>
+      <section class="flex justify-align">
+        <div class="ticket-background">
+          <div class="ticket-btn big-ticket-btn flex justify-align">
+            <a
+              class="secondary-font neon-text"
+              href="https://premier.ticketek.com.au/"
+              >Sign Up!</a
+            >
           </div>
         </div>
-      </div>
-    </div>
+      </section>
+    </footer>
   </body>
 </html>
 
@@ -292,6 +271,8 @@ Kottke, Jason. “Silkscreen.” Google Fonts, fonts.google.com/specimen/Silkscr
 Ozler, Isa. “Kode Mono.” Google Fonts, fonts.google.com/specimen/Kode+Mono.
 
 Powell, K. (2023, September 23). Create an infinite horizontal scroll animation. Www.youtube.com. https://www.youtube.com/watch?v=iLmBy-HKIAw -->
+
+<!-- Ticketek Australia. (n.d). https://premier.ticketek.com.au/ -->
 
 <!-- Assessment One Assets
 
