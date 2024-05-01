@@ -153,6 +153,11 @@ a {
   height: 85px;
 }
 
+.mini-logo {
+  width: 2.75rem;
+  height: 2.75rem;
+}
+
 /* ON SALE SCROLLER COMPONENT*/
 .tag-list {
   margin: 0;
@@ -296,4 +301,30 @@ a.button-mini {
   padding-block: 0.25rem;
   border-radius: 2rem;
   box-shadow: 0rem 0.25rem 0.5rem #0000008b;
+}
+
+a.button-nav {
+  border-radius: 0.5rem;
+  margin: 1rem;
+  padding-block: 1rem;
+  padding-inline: 0.5rem;
+  width: 8rem;
+  box-shadow: 0rem 0.25rem 0.5rem #0000008b;
+}
+
+/* NAVIGATION */
+.info-header.nav-button {
+  height: 3rem;
+  width: 3rem;
+  font-size: x-large;
+}
+
+ul {
+  list-style: none;
+  justify-content: flex-end;
+}
+
+nav {
+  height: 4rem;
+  padding: 0 100px;
 }
