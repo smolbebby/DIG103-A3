@@ -127,8 +127,6 @@ a {
 .links {
   margin-block: 0.3rem;
   font-size: large;
-  /* update to no-longer require pointer and instead use <a> */
-  cursor: pointer;
 }
 
 .info-title {
@@ -149,15 +147,10 @@ a {
   max-width: 36rem;
 }
 
-.signup-spacing {
-  padding: 28px;
-  margin-block: 24px 12px;
-}
-
 /* IMG ADJUSTMENTS */
 .main-logo {
-  width: 345px;
-  height: 80px;
+  width: 375px;
+  height: 85px;
 }
 
 /* ON SALE SCROLLER COMPONENT*/
@@ -225,8 +218,6 @@ a {
   width: 15.5rem;
   height: 11.75rem;
   position: relative;
-  /*eventually remove pointer with usage of a instead?*/
-  cursor: pointer;
 }
 
 .display img {
@@ -275,36 +266,34 @@ a {
   margin-block: 5rem;
 }
 
-/* TICKETS */
-.ticket-background {
+/* BUTTON COMPONENT */
+.button-background {
   border-radius: 10rem;
   box-shadow: 0rem 0rem 2.5rem 2rem #fc030390;
 }
 
-.ticket-btn {
-  background-color: #3f0505;
-  color: #f7f7f7;
-  cursor: pointer;
-  border-radius: 10rem;
-  text-align: center;
-}
-
-.big-ticket-btn {
-  padding: 2rem;
-  box-shadow: 0rem 0.5rem 1rem #0000008b;
-  max-height: 1rem;
-  width: 24rem;
-  font-size: xx-large;
-}
-
-.mini-ticket-margin {
+.mini-button-margin {
   margin: -0.5rem 3rem 2rem 3rem;
 }
 
-.mini-ticket-btn {
-  padding-inline: 3rem;
-  padding-block: 0.5rem;
+a.button {
+  border: none;
+  color: #f7f7f7;
+  background-color: #3f0505;
+}
+
+a.button-main {
+  font-size: xx-large;
+  box-shadow: 0rem 0.5rem 1rem #0000008b;
+  padding: 2rem;
+  max-height: 1rem;
+  width: 24rem;
+  border-radius: 10rem;
+}
+
+a.button-mini {
+  margin-top: 0.5rem;
+  padding-block: 0.25rem;
   border-radius: 2rem;
   box-shadow: 0rem 0.25rem 0.5rem #0000008b;
-  font-size: small;
 }
