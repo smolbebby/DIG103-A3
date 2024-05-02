@@ -314,6 +314,10 @@ a.button-nav {
   transition: 0.5s;
 }
 
+a.button-nav:hover {
+  margin-top: 0.75rem;
+}
+
 /* NAVIGATION */
 .info-header.hamburger-button {
   height: 3rem;
@@ -328,14 +332,36 @@ nav ul {
 
 nav {
   height: 4rem;
-  padding: 0 100px;
+  padding: 0 30px;
   align-items: center;
   justify-content: space-between;
 }
 
-nav ul li a:hover {
+/* MEDIA QUERIES */
+@media only screen and (max-width: 1440px) {
+  nav {
+    padding: 0 20px;
+  }
+  a.button-nav {
+    margin: 0.5rem;
+    width: 6rem;
+  }
 }
-
-a.button-nav:hover {
-  margin-top: 0.75rem;
+@media only screen and (max-width: 1024px) {
+  nav {
+    padding: 0 10px;
+  }
+  a.button-nav {
+    margin: 0.25rem;
+    width: 6rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  nav {
+    padding: 0 5px;
+  }
+  a.button-nav {
+    margin: 0.1rem;
+    width: 6rem;
+  }
 }
