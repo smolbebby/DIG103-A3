@@ -310,16 +310,18 @@ a.button-nav {
   padding-inline: 0.5rem;
   width: 8rem;
   box-shadow: 0rem 0.25rem 0.5rem #0000008b;
+
+  transition: 0.5s;
 }
 
 /* NAVIGATION */
-.info-header.nav-button {
+.info-header.hamburger-button {
   height: 3rem;
   width: 3rem;
   font-size: x-large;
 }
 
-ul {
+nav ul {
   list-style: none;
   justify-content: flex-end;
 }
@@ -327,4 +329,13 @@ ul {
 nav {
   height: 4rem;
   padding: 0 100px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav ul li a:hover {
+}
+
+a.button-nav:hover {
+  margin-top: 0.75rem;
 }
