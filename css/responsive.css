@@ -1,0 +1,571 @@
+/* MEDIA QUERIES */
+
+/* DESKTOP */
+/* MEGA LARGE */
+@media only screen and (min-width: 1721px) {
+  /* header */
+  .section-key-info-margin.tagline-margin {
+    margin: 2rem 2rem auto 65rem;
+  }
+
+  /* display */
+  .display {
+    margin-inline: 2rem;
+  }
+}
+
+@media only screen and (max-width: 1720px) {
+  /* header */
+  .section-key-info-margin.tagline-margin {
+    margin: 2rem 2rem auto 60rem;
+  }
+
+  /* display */
+  .display {
+    margin-inline: 2rem;
+  }
+}
+
+@media only screen and (max-width: 1520px) {
+  /* header */
+  .section-key-info-margin.tagline-margin {
+    margin: 2rem 2rem auto 50rem;
+  }
+
+  /* display */
+  .display {
+    margin-inline: 1.5rem;
+  }
+}
+
+/* EXTRA LARGE */
+@media only screen and (max-width: 1440px) {
+  /* navigation */
+  nav {
+    padding: 3rem 2rem;
+  }
+  /* header */
+  .section-key-info-margin.tagline-margin {
+    margin: 4rem 2rem auto 45rem;
+  }
+
+  .section-key-info {
+    font-size: x-large;
+  }
+
+  /* display */
+  .display {
+    margin-inline: 0.5rem;
+  }
+
+  /* buttons */
+  a.button-nav {
+    margin: 1rem;
+    width: 9rem;
+
+    transition: 0.5s;
+  }
+}
+/* --- */
+
+/* LARGE */
+@media only screen and (max-width: 1260px) {
+  /* navigation */
+  nav {
+    padding: 3rem 1.75rem;
+  }
+
+  a.button-nav {
+    margin: 1rem;
+    width: 7rem;
+    font-size: medium;
+
+    transition: 0.5s;
+  }
+  /* header */
+  .section-key-info-margin.tagline-margin {
+    margin: 4rem 2rem auto 35rem;
+  }
+
+  /* display */
+  .display {
+    margin-inline: 1.5rem;
+  }
+}
+/* --- */
+
+/* AVERAGE */
+@media only screen and (max-width: 1024px) {
+  /* navigation */
+  nav {
+    padding: 3rem 1.5rem;
+  }
+  a.button-nav {
+    margin: 1rem 0.75rem;
+    width: 6.5rem;
+    font-size: medium;
+
+    transition: 0.5s;
+  }
+  /* header */
+  .section-key-info-margin.tagline-margin {
+    margin: 4rem 2rem auto 25rem;
+  }
+
+  /* display */
+  .display {
+    margin-inline: 1.5rem;
+  }
+}
+/* --- */
+
+/* TABLET */
+/* EXTRA LARGE */
+@media only screen and (max-width: 950px) {
+  /* navigation */
+  nav {
+    padding: 3rem 1.25rem;
+  }
+
+  a.button-nav {
+    margin: 1rem 0.5rem;
+    width: 6.25rem;
+    font-size: medium;
+
+    transition: 0.5s;
+  }
+  /* header */
+  .main-logo {
+    margin: 2rem auto auto 2rem;
+  }
+
+  .section-key-info-margin.tagline-margin {
+    margin: 4rem 2rem auto 20rem;
+  }
+
+  /* display */
+  .display {
+    margin-inline: 3rem;
+  }
+
+  /* buttons */
+  .mini-button-margin {
+    margin: -0.5rem 2rem 1rem 3.9rem;
+  }
+
+  /* footer */
+}
+
+/* LARGE */
+@media only screen and (max-width: 850px) {
+  /* navigation */
+  nav {
+    padding: 3rem 1.25rem;
+  }
+  .hamburger-button {
+    display: flex;
+    cursor: pointer;
+  }
+  nav ul {
+    height: 100%;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0rem;
+    width: 100%;
+    backdrop-filter: blur(1rem);
+  }
+
+  .navigation-buttons {
+    display: block;
+    margin: auto auto auto auto;
+    width: fit-content;
+  }
+
+  .navigation-subsection {
+    display: none;
+  }
+  /* header */
+  .main-logo {
+    margin: 2rem auto auto 5rem;
+  }
+
+  .section-key-info-margin.tagline-margin {
+    margin: 4rem 2rem auto 12.5rem;
+  }
+
+  /* display */
+  .display {
+    margin-inline: 3.5rem;
+  }
+
+  /* buttons */
+  a.button-nav {
+    margin: 1rem;
+    width: 30rem;
+    font-size: x-large;
+  }
+
+  .mini-button-margin {
+    margin: -0.5rem 2rem 1rem 4.3rem;
+  }
+
+  /* footer */
+}
+/* --- */
+
+/* INTERIM STUFF IDK WHAT TO CALL THIS SORRY */
+@media only screen and (min-width: 770px) {
+  /* navigation */
+
+  /* header */
+  .header-key-dates {
+    font-size: x-large;
+  }
+
+  .main-logo {
+    width: 500px;
+    height: 105px;
+    margin: 2rem auto auto 2rem;
+  }
+
+  /* display */
+  .info-title {
+    width: 30rem;
+  }
+
+  .display-location-margin {
+    margin-top: 1rem;
+  }
+
+  /* buttons */
+  .button-background {
+    width: 25rem;
+  }
+
+  .button-background-mini {
+    width: 14rem;
+  }
+
+  a.button-main {
+    width: 25rem;
+    font-size: xx-large;
+  }
+
+  a.button-mini {
+    width: 14rem;
+  }
+
+  /* footer */
+  .footer-social-media {
+    font-size: large;
+  }
+
+  .section-footer-links {
+    width: 100%;
+    margin: 0.5rem 2rem auto auto;
+  }
+
+  /* .footer-logo {
+    margin: 2rem auto 4rem auto;
+  } */
+}
+/* --- */
+
+/* AVERAGE */
+@media only screen and (max-width: 769px) {
+  /* navigation */
+  nav {
+    padding: 3rem 1.25rem;
+  }
+  .hamburger-button {
+    /* display: flex; */
+    cursor: pointer;
+  }
+
+  .hamburger-button-opened {
+    display: none;
+  }
+
+  .hamburger-button-closed {
+    display: none;
+  }
+
+  nav ul {
+    height: 100%;
+    position: absolute;
+    top: 100px;
+    left: -1rem;
+    right: 0rem;
+    width: auto;
+    backdrop-filter: blur(1rem);
+  }
+
+  .navigation-buttons {
+    display: block;
+    margin: auto auto auto auto;
+    width: fit-content;
+  }
+
+  /* header */
+  .main-logo {
+    width: 500px;
+    height: 105px;
+  }
+
+  .tagline-margins {
+    margin: 4rem 3rem 8rem auto;
+  }
+
+  .header-key-dates {
+    font-size: x-large;
+  }
+
+  /* display */
+  .display-location-margin {
+    margin-top: 1rem;
+  }
+
+  .display-location-margin.display {
+    bottom: 1rem;
+  }
+
+  /* buttons */
+  a.button-nav {
+    margin: 1rem;
+    width: 20rem;
+    font-size: x-large;
+  }
+
+  .button-background {
+    width: 25rem;
+  }
+
+  .button-background-mini {
+    width: 13rem;
+  }
+
+  .mini-button-margin {
+    margin: -0.5rem 2rem 1rem 4.8rem;
+  }
+
+  a.button-main {
+    width: 25rem;
+  }
+
+  a.button-mini {
+    width: 13rem;
+  }
+
+  /* footer */
+  .section-footer-links {
+    margin-block: 0.5rem;
+    width: 100%;
+  }
+  .footer-logo {
+    margin: 1rem auto;
+  }
+}
+/* --- */
+
+/* MOBILE */
+/* LARGE/AVERAGE */
+@media only screen and (max-width: 425px) {
+  /* navigation */
+  .navigation-buttons {
+    margin: 2rem 3rem;
+    width: fit-content;
+  }
+
+  nav ul {
+    left: -2rem;
+    right: 0rem;
+  }
+
+  /* header */
+  .main-logo {
+    width: 350px;
+    height: 80px;
+    margin: 1rem auto 1rem auto;
+  }
+
+  .header-key-dates {
+    font-size: large;
+  }
+
+  .section-key-info-margin.tagline-margin {
+    margin: 4rem auto 8rem auto;
+  }
+
+  /* display */
+  .display {
+    display: grid;
+  }
+
+  /* buttons */
+  a.button-nav {
+    margin: 1rem;
+    width: 18rem;
+    font-size: x-large;
+  }
+
+  .button-background {
+    width: 22rem;
+  }
+
+  .button-background-mini {
+    width: 13rem;
+  }
+
+  .mini-button-margin {
+    margin: -0.5rem 2rem 1rem 4.8rem;
+  }
+
+  a.button-main {
+    width: 22rem;
+  }
+
+  a.button-mini {
+    width: 13rem;
+  }
+  /* footer */
+  .footer-logo {
+    margin: 1rem auto;
+  }
+
+  .section-footer-links {
+    width: 35%;
+  }
+}
+/* --- */
+
+/* MEDIUM */
+@media only screen and (max-width: 376px) {
+  /* navigation */
+  .navigation-buttons {
+    margin: 2rem 2.4rem;
+    width: fit-content;
+  }
+
+  /* header */
+  .main-logo {
+    width: 350px;
+    height: 75px;
+    margin: 1rem auto 1rem auto;
+  }
+
+  .section-key-info-margin.tagline-margin {
+    margin: 4rem auto 8rem auto;
+  }
+
+  /* buttons */
+  .button-background {
+    width: 20rem;
+  }
+
+  .button-background-mini {
+    width: 13rem;
+  }
+
+  .mini-button-margin {
+    margin: -0.5rem 2rem 1rem 4.8rem;
+  }
+
+  a.button-main {
+    width: 20rem;
+  }
+
+  a.button-mini {
+    width: 13rem;
+  }
+
+  a.button-nav {
+    width: 16rem;
+  }
+
+  /* footer */
+  .footer-logo {
+    width: 330px;
+    height: 70px;
+    margin: 1rem auto;
+  }
+
+  .section-footer-links {
+    width: 40%;
+  }
+}
+/* --- */
+
+/* SMALL */
+@media only screen and (max-width: 321px) {
+  /* navigation */
+  .navigation-buttons {
+    margin: 2rem 1rem;
+    width: fit-content;
+  }
+
+  nav ul {
+    left: -2.5rem;
+    right: 0rem;
+  }
+  /* header */
+  .main-logo {
+    width: 280px;
+    height: 65px;
+    margin: 1rem auto 1rem auto;
+  }
+
+  .section-key-info-margin.tagline-margin {
+    margin: 4rem auto 8rem auto;
+  }
+  .header-key-dates {
+    font-size: medium;
+  }
+
+  /* display */
+  .display {
+    margin: 1rem 2.5rem 1rem 2.3rem;
+    width: 15rem;
+  }
+  /* buttons */
+  .button-background {
+    width: 15rem;
+  }
+
+  .button-background-mini {
+    width: 13rem;
+  }
+  a.button-main {
+    width: 15rem;
+    font-size: x-large;
+  }
+
+  .mini-button-margin {
+    margin: -0.5rem 2rem 1rem 3.6rem;
+  }
+  a.button-mini {
+    width: 13rem;
+  }
+
+  /* footer */
+  .footer-logo {
+    width: 280px;
+    height: 65px;
+    margin: 1rem auto;
+  }
+
+  .section-footer-links {
+    width: 39%;
+  }
+}
+/* --- */
+
+/* navigation */
+
+/* header */
+
+/* display */
+
+/* buttons */
+
+/* footer */

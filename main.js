@@ -1,43 +1,28 @@
-console.log("Initialising");
+console.log("Initialised.");
 
-// HAMBURGER MENU - OPEN AND CLOSE MOBILE MENU
-const mobileMenu = document.querySelector(".mobile-menu");
-const body = document.querySelector("body");
+// NAVIGATION MENU - OPEN AND CLOSE MOBILE MENU
+const mobileNavigation = document.querySelector(".navigation-subsection");
+const htmlBody = document.querySelector("body");
+const openedNavigation = document.querySelector(".hamburger-button-opened");
+const closedNavigation = document.querySelector(".hamburger-button-closed");
+let toggleStatus = 1;
 
-function openMobileMenu() {
-  mobileMenu.style.display = "flex";
-  body.style.overflowY = "hidden";
+function toggleNavigation() {
+  if (toggleStatus == 1) {
+    mobileNavigation.style.display = "none";
+    htmlBody.style.overflowY = "scroll";
+    openedNavigation.style.display = "none";
+    closedNavigation.style.display = "flex";
+
+    toggleStatus = 0;
+  } else if (toggleStatus == 0) {
+    mobileNavigation.style.display = "block";
+    htmlBody.style.overflowY = "hidden";
+    openedNavigation.style.display = "flex";
+    closedNavigation.style.display = "none";
+    toggleStatus = 1;
+  }
 }
-
-function closeMobileMenu() {
-  mobileMenu.style.display = "none";
-  body.style.overflowY = "scroll";
-}
-
-// MOBILE TO DESKTOP MEDIA QUERY ASSISTANCE
-// const desktopHeader = document.querySelector(".desktop-header");
-// const mobileHeader = document.querySelector(".header");
-
-// function switchToDesktop() {
-//   mobileHeader.style.display = "hidden";
-//   desktopHeader.style.display = "flex";
-// }
-
-// // TESTING MEDIA?
-// const desktopHeader = document.querySelector(".desktop-header");
-// const mobileHeader = document.querySelector(".header");
-
-// function mobileToDesktop() {
-//   window.matchMedia("(min-width: 750px").addEventListener(function (e) {
-//     if (e.matches) {
-//       desktopHeader.style.display = "flex";
-//       mobileHeader.style.display = "none";
-//     } else {
-//       desktopHeader.style.display = "hidden";
-//       mobileHeader.style.display = "flex";
-//     }
-//   });
-// }
 
 // ON-SALE SLIDER
 const scrollers = document.querySelectorAll(".scroller");

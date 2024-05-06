@@ -8,7 +8,7 @@
     <title>Elektrik Eel Festival</title>
     <link rel="icon" type="image/x-icon" href="/assets/Logo/favicon.png" />
     <link rel="stylesheet" href="/css/main.css" />
-    <link rel="stylesheet" href="/css/desktop.css" />
+    <link rel="stylesheet" href="/css/responsive.css" />
     <script defer src="main.js"></script>
     <link
       rel="stylesheet"
@@ -22,26 +22,34 @@
   <!-- WEBSITE CODE -->
   <body class="body">
     <!-- HEADER - LOGO, TAGLINE, KEY INFO AND TICKETS -->
-    <header>
-      <nav class="flex">
-        <div
-          class="info-header justify-align flex"
-          style="width: 3rem; height: 3rem"
-        >
+    <nav class="flex">
+      <div
+        class="info-header justify-align flex"
+        style="width: 3rem; height: 3rem"
+      >
+        <a href="index.html">
           <img
             src="/assets/Logo/MiniLogo.svg"
             alt="Navigation Logo"
             class="mini-logo"
-          />
-        </div>
-        <div class="button-nav info-header hamburger-button justify-align flex">
-          <i class="fa-solid fa-bars"></i>
-        </div>
-        <ul class="flex">
+        /></a>
+      </div>
+      <div
+        onclick="toggleNavigation()"
+        class="hamburger-button button-nav info-header justify-align flex"
+      >
+        <i class="hamburger-button-closed fa-solid fa-bars"></i>
+        <i
+          style="display: none"
+          class="hamburger-button-opened fa-solid fa-xmark"
+        ></i>
+      </div>
+      <ul class="navigation-subsection">
+        <div class="navigation-buttons">
           <li>
             <a
               class="button button-nav secondary-font flex justify-align"
-              href=""
+              href="https://premier.ticketek.com.au/"
               >Tickets</a
             >
           </li>
@@ -49,40 +57,42 @@
           <li>
             <a
               class="button button-nav secondary-font flex justify-align"
-              href=""
+              href="line-up.html"
               >Line Up</a
             >
           </li>
           <li>
             <a
               class="button button-nav secondary-font flex justify-align"
-              href=""
+              href="404.html"
               >Locations</a
             >
           </li>
           <li>
             <a
               class="button button-nav secondary-font flex justify-align"
-              href=""
+              href="404.html"
               >Contact</a
             >
           </li>
           <li>
             <a
               class="button button-nav secondary-font flex justify-align"
-              href=""
+              href="404.html"
               >Merch</a
             >
           </li>
-          <li>
+          <lix>
             <a
               class="button button-nav secondary-font neon-text flex justify-align"
-              href=""
+              href="404.html"
               >Sign Up</a
             >
           </li>
-        </ul>
-      </nav>
+        </div>
+      </ul>
+    </nav>
+    <header>
       <section class="flex justify-align">
         <img
           src="/assets/Logo/Mega.png"
@@ -90,7 +100,7 @@
           class="main-logo"
         />
       </section>
-      <section class="section-key-info-margin background-shadow">
+      <section class="tagline-margin section-key-info-margin background-shadow">
         <div class="header-key-info flex justify-align section-text">
           3 Nights of premiere artistry and hypnotic craftsmanship
         </div>
@@ -99,7 +109,9 @@
         class="section-key-info-margin background-shadow justify-align"
         style="line-height: 2rem"
       >
-        <div class="header-key-info flex justify-align section-text">
+        <div
+          class="header-key-dates header-key-info flex justify-align section-text"
+        >
           December 19th -> December 21st
         </div>
         <div class="header-key-info flex justify-align section-text">
@@ -107,7 +119,7 @@
         </div>
       </section>
       <section class="section-big-ticket-margin flex justify-align">
-        <div class="ticket-background">
+        <div class="button-background">
           <a
             class="button button-main secondary-font neon-text flex justify-align"
             href="https://premier.ticketek.com.au/"
@@ -223,7 +235,7 @@
             alt="Wide-Eye view of Brisbane CBD, with Story Bridge"
           />
         </a>
-        <div class="button-background mini-button-margin">
+        <div class="button-background-mini mini-button-margin">
           <a
             class="button button-mini secondary-font flex justify-align"
             href="https://premier.ticketek.com.au/"
@@ -241,7 +253,7 @@
             alt="Sydney Harbour Bridge from a below angle at night"
           />
         </a>
-        <div class="button-background mini-button-margin">
+        <div class="button-background-mini mini-button-margin">
           <a
             class="button button-mini secondary-font flex justify-align"
             href="https://premier.ticketek.com.au/"
@@ -259,7 +271,7 @@
             alt="Flinders Street Train Station"
           />
         </a>
-        <div class="button-background mini-button-margin">
+        <div class="button-background-mini mini-button-margin">
           <a
             class="button button-mini secondary-font flex justify-align"
             href="https://premier.ticketek.com.au/"
@@ -271,33 +283,42 @@
 
     <!-- FOOTER -->
     <footer class="flex justify-align">
-      <div class="main-logo">
-        <img
-          src="/assets/Logo/Mega.png"
-          alt="Footer Mega Logo"
-          style="width: 345px; height: 75px"
-        />
+      <div class="footer-logo">
+        <a href="index.html">
+          <img
+            src="/assets/Logo/Mega.png"
+            alt="Footer Mega Logo"
+            class="footer-logo"
+          />
+        </a>
       </div>
-      <a href="404.html" class="links section-text">About</a>
-      <a href="line-up.html" class="links section-text">Line-Up</a>
-      <a href="404.html" class="links section-text">Locations</a>
-      <a href="404.html" class="links section-text">Merch</a>
-      <a href="404.html" class="links section-text">Contact</a>
-      <a href="404.html" class="links section-text">Privacy Policy</a>
-      <div class="section-text" style="margin-top: 2rem">Follow Us!</div>
-      <div class="links section-text" style="word-spacing: 0.5rem">
-        <a href="https://www.facebook.com/" class="fa-brands fa-facebook"></a>
-        <a
-          href="https://twitter.com/?lang=en"
-          class="fa-brands fa-x-twitter"
-        ></a>
-        <a href="https://www.instagram.com/" class="fa-brands fa-instagram"></a>
-        <a href="https://www.youtube.com/" class="fa-brands fa-youtube"></a>
-        <a href="https://www.tiktok.com/" class="fa-brands fa-tiktok"></a>
-        <a href="https://open.spotify.com/" class="fa-brands fa-spotify"></a>
-      </div>
-      <section class="flex justify-align">
-        <div class="button-background">
+      <section class="section-footer-links justify-align">
+        <a href="404.html" class="section-text">About</a>
+        <a href="line-up.html" class="section-text">Line-Up</a>
+        <a href="404.html" class="section-text">Locations</a>
+        <a href="404.html" class="section-text">Merch</a>
+        <a href="404.html" class="section-text">Contact</a>
+        <a href="404.html" class="section-text">Privacy</a>
+      </section>
+      <section class="footer-social-media">
+        <div class="section-text" style="margin-top: 2rem">Follow Us!</div>
+        <div class="section-text" style="word-spacing: 0.5rem">
+          <a href="https://www.facebook.com/" class="fa-brands fa-facebook"></a>
+          <a
+            href="https://twitter.com/?lang=en"
+            class="fa-brands fa-x-twitter"
+          ></a>
+          <a
+            href="https://www.instagram.com/"
+            class="fa-brands fa-instagram"
+          ></a>
+          <a href="https://www.youtube.com/" class="fa-brands fa-youtube"></a>
+          <a href="https://www.tiktok.com/" class="fa-brands fa-tiktok"></a>
+          <a href="https://open.spotify.com/" class="fa-brands fa-spotify"></a>
+        </div>
+      </section>
+      <section class="footer-social-media">
+        <div class="button-background section-footer-button-margin">
           <a
             class="button button-main secondary-font neon-text flex justify-align"
             href="404.html"
@@ -325,12 +346,43 @@
 
 “YouTube Icon | Font Awesome.” Fontawesome.com, fontawesome.com/icons/youtube?f=brands&s=solid
 
+"xmark Icon | Font Awesome." Fontawesome.com, https://fontawesome.com/icons/xmark?f=classic&s=solid
+
+"bars Icon | Font Awesome." Fontawesome.com, https://fontawesome.com/icons/bars?f=classic&s=solid
+
 Kottke, Jason. “Silkscreen.” Google Fonts, fonts.google.com/specimen/Silkscreen.
 Ozler, Isa. “Kode Mono.” Google Fonts, fonts.google.com/specimen/Kode+Mono.
 
-Powell, K. (2023, September 23). Create an infinite horizontal scroll animation. Www.youtube.com. https://www.youtube.com/watch?v=iLmBy-HKIAw -->
+Powell, K. (2023, September 23). Create an infinite horizontal scroll animation. Www.youtube.com. https://www.youtube.com/watch?v=iLmBy-HKIAw 
+
+evlearn. (2022, February 9). Responsive Navigation Bar using HTML, CSS & Javascript by evlearn. Www.youtube.com. https://www.youtube.com/watch?v=dIFNHeHTja0 -->
 
 <!-- Ticketek Australia. (n.d). https://premier.ticketek.com.au/ -->
+
+<!-- 
+ASSESSMENT THREE ASSETS
+
+Astrality. (2023, November 15). Instagram. Www.instagram.com. https://www.instagram.com/p/CzolF_YsNgs/
+
+Crystal Skies Official. (2024, January 6). Instagram. Www.instagram.com. https://www.instagram.com/p/C1uqzEnPkb5/?img_index=1
+
+Da Tweekaz. (2024, March 5). Instagram. Www.instagram.com. https://www.instagram.com/p/C4GYN-QNTYr/?img_index=6
+
+Dekoda, M. (2024, February 20). Instagram. Www.instagram.com. https://www.instagram.com/p/C3iSSvUIRog/?img_index=3
+
+GHOST DATA. (2022, May 3). Facebook. Www.facebook.com. https://www.facebook.com/photo/?fbid=407638024514097&set=a.209014941043074
+
+knock2music. (2023, December 6). Instagram. Www.instagram.com. https://www.instagram.com/p/C0fGgKmv0S9/
+
+Palastic Music. (2023, March 22). Instagram. Www.instagram.com. https://www.instagram.com/p/CqEDzyZMSoR/?img_index=1
+
+Ross, J. (2024). Jasonrossofficial.com. https://jasonrossofficial.com/cdn/shop/files/600JasonRoss2022-0178_401x.jpg?v=1654274187
+
+RÜFÜS DU SOL. (2023, December 15). Instagram. Www.instagram.com. https://www.instagram.com/p/C02pZBWrztH/?img_index=1
+
+Subfocus. (2024, April 14). Instagram. Www.instagram.com. https://www.instagram.com/p/C5tItcaCl1T/
+
+Tura, M. (2022, December 29). Instagram. Www.instagram.com. https://www.instagram.com/p/CmwAQvHNcVR/?img_index=1 -->
 
 <!-- Assessment One Assets
 
