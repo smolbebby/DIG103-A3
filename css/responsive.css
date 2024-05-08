@@ -59,7 +59,7 @@
   }
 
   /* buttons */
-  a.button-nav {
+  .button-nav {
     margin: 1rem;
     width: 9rem;
 
@@ -75,7 +75,7 @@
     padding: 3rem 1.75rem;
   }
 
-  a.button-nav {
+  .button-nav {
     margin: 1rem;
     width: 7rem;
     font-size: medium;
@@ -100,7 +100,7 @@
   nav {
     padding: 3rem 1.5rem;
   }
-  a.button-nav {
+  .button-nav {
     margin: 1rem 0.75rem;
     width: 6.5rem;
     font-size: medium;
@@ -127,7 +127,7 @@
     padding: 3rem 1.25rem;
   }
 
-  a.button-nav {
+  .button-nav {
     margin: 1rem 0.5rem;
     width: 6.25rem;
     font-size: medium;
@@ -200,7 +200,7 @@
   }
 
   /* buttons */
-  a.button-nav {
+  .button-nav {
     margin: 1rem;
     width: 30rem;
     font-size: x-large;
@@ -247,12 +247,12 @@
     width: 14rem;
   }
 
-  a.button-main {
+  .button-main {
     width: 25rem;
     font-size: xx-large;
   }
 
-  a.button-mini {
+  .button-mini {
     width: 14rem;
   }
 
@@ -331,7 +331,7 @@
   }
 
   /* buttons */
-  a.button-nav {
+  .button-nav {
     margin: 1rem;
     width: 20rem;
     font-size: x-large;
@@ -349,11 +349,11 @@
     margin: -0.5rem 2rem 1rem 4.8rem;
   }
 
-  a.button-main {
+  .button-main {
     width: 25rem;
   }
 
-  a.button-mini {
+  .button-mini {
     width: 13rem;
   }
 
@@ -403,7 +403,7 @@
   }
 
   /* buttons */
-  a.button-nav {
+  .button-nav {
     margin: 1rem;
     width: 18rem;
     font-size: x-large;
@@ -421,11 +421,11 @@
     margin: -0.5rem 2rem 1rem 4.8rem;
   }
 
-  a.button-main {
+  .button-main {
     width: 22rem;
   }
 
-  a.button-mini {
+  .button-mini {
     width: 13rem;
   }
   /* footer */
@@ -471,15 +471,15 @@
     margin: -0.5rem 2rem 1rem 4.8rem;
   }
 
-  a.button-main {
+  .button-main {
     width: 20rem;
   }
 
-  a.button-mini {
+  .button-mini {
     width: 13rem;
   }
 
-  a.button-nav {
+  .button-nav {
     width: 16rem;
   }
 
@@ -535,7 +535,7 @@
   .button-background-mini {
     width: 13rem;
   }
-  a.button-main {
+  .button-main {
     width: 15rem;
     font-size: x-large;
   }
@@ -543,7 +543,7 @@
   .mini-button-margin {
     margin: -0.5rem 2rem 1rem 3.6rem;
   }
-  a.button-mini {
+  .button-mini {
     width: 13rem;
   }
 

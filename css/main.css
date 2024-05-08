@@ -295,13 +295,13 @@ nav {
   margin: -0.5rem 3rem 2rem 3rem;
 }
 
-a.button {
+.button {
   border: none;
   color: #f7f7f7;
   background-color: #3f0505;
 }
 
-a.button-main {
+.button-main {
   font-size: xx-large;
   box-shadow: 0rem 0.5rem 1rem #0000008b;
   padding: 2rem;
@@ -310,14 +310,14 @@ a.button-main {
   border-radius: 10rem;
 }
 
-a.button-mini {
+.button-mini {
   margin-top: 0.5rem;
   padding-block: 0.25rem;
   border-radius: 2rem;
   box-shadow: 0rem 0.25rem 0.5rem #0000008b;
 }
 
-a.button-nav {
+.button-nav {
   border-radius: 0.5rem;
   margin: 1rem;
   padding-block: 1rem;
@@ -329,8 +329,16 @@ a.button-nav {
   transition: 0.5s;
 }
 
-a.button-nav:hover {
+.button-nav:hover {
   margin-top: 0.75rem;
+}
+
+.ticket-hover {
+  transition: 0.5s;
+}
+
+.ticket-hover:hover {
+  margin-top: -0.5rem;
 }
 /* --- */
 
@@ -390,5 +398,15 @@ a.button-nav:hover {
   to {
     transform: translate(calc(-75% + 95.25rem));
   }
+}
+/* --- */
+
+/* DIALOG / SIGN-UP MODAL */
+.modal {
+  z-index: 100;
+  padding: 0.5rem;
+  background: #3f0505;
+  box-shadow: 0rem 0rem 2rem #000000e4;
+  border-radius: 0.25rem;
 }
 /* --- */

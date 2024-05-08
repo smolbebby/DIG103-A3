@@ -61,3 +61,5 @@ function addAnimation() {
     });
   });
 }
+
+//MODEL SIGN-UP FUNCTION - OPENS AND CLOSES DIALOG
