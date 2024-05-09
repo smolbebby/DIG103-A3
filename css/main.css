@@ -55,7 +55,6 @@
   background-size: cover;
   background-position: center;
   font-family: "KodeMono", monospace;
-  /* overflow-y: scroll; */
 }
 
 .flex {
@@ -95,28 +94,6 @@ section {
   padding: 0.5rem;
 }
 
-.section-text {
-  color: #f7f7f7;
-  text-shadow: black 0.25rem 0.25rem;
-}
-
-.section-text-title {
-  font-size: x-large;
-  margin-inline: 3rem;
-  letter-spacing: 0.75rem;
-}
-
-.section-text-subtitle {
-  font-size: small;
-  letter-spacing: 0.25rem;
-}
-
-.section-text-genre {
-  font-size: small;
-  letter-spacing: 0.25rem;
-  margin-block: 0.75rem;
-}
-
 .section-key-info-margin {
   margin: 4rem auto 8rem auto;
   text-align: center;
@@ -141,6 +118,29 @@ section {
   width: 30%;
   line-height: 2rem;
   text-align: center;
+}
+/* --- */
+
+/* SECTION TEXT STYLES */
+.section-text {
+  color: #f7f7f7;
+  text-shadow: black 0.25rem 0.25rem;
+}
+
+.section-text-title {
+  font-size: x-large;
+  letter-spacing: 0.75rem;
+}
+
+.section-text-subtitle {
+  font-size: small;
+  letter-spacing: 0.25rem;
+}
+
+.section-text-genre {
+  font-size: small;
+  letter-spacing: 0.25rem;
+  margin-block: 0.75rem;
 }
 /* --- */
 
@@ -261,18 +261,22 @@ section {
 .display-locations-margin {
   margin-block: 1rem;
 }
-
 /* --- */
 
-/* LINEUP PAGE DISPLAY TABLE */
+/* LINEUP PAGE DISPLAY */
 .artist-image-position-right {
   flex-wrap: wrap-reverse;
+  column-gap: 10%;
 }
 
 .artist-image-position-left {
   flex-wrap: wrap;
+  column-gap: 10%;
 }
 
+.artist-info-width {
+  width: auto;
+}
 /* --- */
 
 /* NAVIGATION */
