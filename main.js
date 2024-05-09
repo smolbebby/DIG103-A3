@@ -63,3 +63,15 @@ function addAnimation() {
 }
 
 //MODEL SIGN-UP FUNCTION - OPENS AND CLOSES DIALOG
+const modal = document.querySelector(".modal-sizing");
+const openModal = document.querySelector(".open-modal-button");
+const closeModal = document.querySelector(".close-modal-button");
+
+openModal.addEventListener("click", () => {
+  modal.showModal();
+  htmlBody.style.overflowY = "hidden";
+});
+
+closeModal.addEventListener("click", () => {
+  modal.close();
+});

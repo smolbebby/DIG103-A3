@@ -12,6 +12,17 @@
   .display {
     margin-inline: 2rem;
   }
+
+  /* modal */
+  dialog {
+    top: 15%;
+    left: 35%;
+  }
+
+  .modal-sizing {
+    width: 30%;
+    height: 40%;
+  }
 }
 
 @media only screen and (max-width: 1720px) {
@@ -116,6 +127,17 @@
   .display {
     margin-inline: 1.5rem;
   }
+
+  /* modal */
+  dialog {
+    top: 20%;
+    left: 30%;
+  }
+
+  .modal-sizing {
+    width: 40%;
+    height: 50%;
+  }
 }
 /* --- */
 
@@ -210,7 +232,16 @@
     margin: -0.5rem 2rem 1rem 4.3rem;
   }
 
-  /* footer */
+  /* modal */
+  dialog {
+    top: 20%;
+    left: 25%;
+  }
+
+  .modal-sizing {
+    width: 50%;
+    height: 50%;
+  }
 }
 /* --- */
 
@@ -279,7 +310,6 @@
     padding: 3rem 1.25rem;
   }
   .hamburger-button {
-    /* display: flex; */
     cursor: pointer;
   }
 
@@ -436,6 +466,17 @@
   .section-footer-links {
     width: 35%;
   }
+
+  /* modal */
+  dialog {
+    top: 18%;
+    left: 15%;
+  }
+
+  .modal-sizing {
+    width: 70%;
+    height: 50%;
+  }
 }
 /* --- */
 
@@ -492,6 +533,17 @@
 
   .section-footer-links {
     width: 40%;
+  }
+
+  /* modal */
+  dialog {
+    top: 18%;
+    left: 8%;
+  }
+
+  .modal-sizing {
+    width: 80%;
+    height: 50%;
   }
 }
 /* --- */

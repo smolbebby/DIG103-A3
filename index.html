@@ -48,46 +48,53 @@
       <ul class="navigation-subsection">
         <div class="navigation-buttons">
           <li>
-            <a
-              class="button button-nav secondary-font flex justify-align"
+            <button class="button button-nav secondary-font flex justify-align">
+              <a
               href="https://premier.ticketek.com.au/"
               >Tickets</a
             >
+            </button>
+
           </li>
 
           <li>
-            <a
-              class="button button-nav secondary-font flex justify-align"
+            <button class="button button-nav secondary-font flex justify-align">
+              <a
               href="line-up.html"
               >Line Up</a
             >
+            </button>
+
           </li>
           <li>
-            <a
-              class="button button-nav secondary-font flex justify-align"
+            <button class="button button-nav secondary-font flex justify-align"><a
               href="404.html"
               >Locations</a
-            >
+            ></button>
           </li>
           <li>
-            <a
-              class="button button-nav secondary-font flex justify-align"
+            <button class="button button-nav secondary-font flex justify-align">
+              <a
               href="404.html"
               >Contact</a
             >
+            </button>
+
           </li>
           <li>
-            <a
-              class="button button-nav secondary-font flex justify-align"
-              href="404.html"
-              >Merch</a
+            <button class="button button-nav secondary-font flex justify-align"
             >
+            <a
+
+            href="404.html"
+            >Merch</a
+          ></button>
+            
           </li>
           <lix>
-            <a
-              class="button button-nav secondary-font neon-text flex justify-align"
-              href="404.html"
-              >Sign Up</a
+            <button
+              class="button button-nav secondary-font neon-text flex justify-align open-modal-button"
+              >Sign Up</button
             >
           </li>
         </div>
@@ -120,11 +127,12 @@
         </div>
       </section>
       <section class="section-big-ticket-margin flex justify-align">
-        <div class="button-background ticket-hover">
-          <a
+        <div class="button-background button-main-callToAction">
+          <button
             class="button button-main secondary-font neon-text flex justify-align"
-            href="https://premier.ticketek.com.au/"
-            >Tickets</a
+            >
+            <a href="https://premier.ticketek.com.au/">Tickets</a>
+            </button
           >
         </div>
       </section>
@@ -236,11 +244,12 @@
             alt="Wide-Eye view of Brisbane CBD, with Story Bridge"
           />
         </a>
-        <div class="button-background-mini mini-button-margin">
-          <a
+        <div class="button-background-mini button-mini-callToAction mini-button-margin">
+          <button
             class="button button-mini secondary-font flex justify-align"
-            href="https://premier.ticketek.com.au/"
-            >Tickets</a
+            
+            >
+            <a href="https://premier.ticketek.com.au/">Tickets</a></button
           >
         </div>
       </div>
@@ -254,11 +263,12 @@
             alt="Sydney Harbour Bridge from a below angle at night"
           />
         </a>
-        <div class="button-background-mini mini-button-margin">
-          <a
+        <div class="button-background-mini button-mini-callToAction mini-button-margin">
+          <button
             class="button button-mini secondary-font flex justify-align"
-            href="https://premier.ticketek.com.au/"
-            >Tickets</a
+            
+            >
+            <a href="https://premier.ticketek.com.au/">Tickets</a></button
           >
         </div>
       </div>
@@ -272,11 +282,12 @@
             alt="Flinders Street Train Station"
           />
         </a>
-        <div class="button-background-mini mini-button-margin">
-          <a
+        <div class="button-background-mini button-mini-callToAction mini-button-margin">
+          <button
             class="button button-mini secondary-font flex justify-align"
-            href="https://premier.ticketek.com.au/"
-            >Tickets</a
+            
+            >
+            <a href="https://premier.ticketek.com.au/">Tickets</a></button
           >
         </div>
       </div>
@@ -319,15 +330,39 @@
         </div>
       </section>
       <section class="footer-social-media">
-        <div class="button-background section-footer-button-margin">
-          <div
-            class="button button-main secondary-font neon-text flex justify-align"
-            href="404.html"
-            >Sign Up!</div
-          >
+        <div class="button-background button-main-callToAction section-footer-button-margin">
+          <button class="button button-main secondary-font neon-text flex justify-align open-modal-button">Sign Up!</button>
         </div>
       </section>
     </footer>
+
+    <dialog class="modal-sizing info-header" id="modal">
+      <div
+        onclick=""
+        class="close-modal-button"
+      >
+        <i
+          class="fa-solid fa-xmark"
+        ></i>
+      </div>
+          <div class="modal-title secondary-font neon-text flex justify-align">Sign Up!</div>
+          <form class="justify-align" action="#">
+           <div class="field">
+            <input type="text" placeholder="Name" class="input">
+           </div>
+           <div class="field">
+            <input type="email" placeholder="Email" class="input">
+           </div>
+           <div class="field">
+            <input type="tel" placeholder="Phone Number" class="input" max="10">
+           </div>
+           <div class="field">
+            <button class="button-field secondary-font justify-align" type="submit">
+              <a class="signup-modal-button" href="404.html">Submit</a>
+              </button>
+           </div>
+          </form>
+        </dialog>
   </body>
 </html>
 
@@ -355,6 +390,8 @@ Kottke, Jason. “Silkscreen.” Google Fonts, fonts.google.com/specimen/Silkscr
 Ozler, Isa. “Kode Mono.” Google Fonts, fonts.google.com/specimen/Kode+Mono.
 
 Powell, K. (2023, September 23). Create an infinite horizontal scroll animation. Www.youtube.com. https://www.youtube.com/watch?v=iLmBy-HKIAw 
+
+Powell, K. (2022, March 18). dialog = the easiest way to make a popup modal. Www.youtube.com. https://www.youtube.com/watch?v=TAB_v6yBXIE
 
 evlearn. (2022, February 9). Responsive Navigation Bar using HTML, CSS & Javascript by evlearn. Www.youtube.com. https://www.youtube.com/watch?v=dIFNHeHTja0 -->
 
