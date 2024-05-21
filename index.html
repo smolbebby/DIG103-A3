@@ -8,6 +8,7 @@
     <title>Elektrik Eel Festival</title>
     <link rel="icon" type="image/x-icon" href="/assets/Logo/favicon.png" />
     <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/responsive.css" />
     <script defer src="main.js"></script>
     <link
       rel="stylesheet"
@@ -20,204 +21,348 @@
 
   <!-- WEBSITE CODE -->
   <body class="body">
-    <!-- HEADER -->
-    <div class="mobile-menu">
-      <div onclick="closeMobileMenu()" class="burger">
-        <div class="menu" style="width: 32px; height: 32px">
-          <h2>
-            <i class="fa-solid fa-xmark"></i>
-          </h2>
-        </div>
-      </div>
-    </div>
-
-    <div class="header">
-      <div class="logo">
-        <div class="menu" style="width: 32px; height: 32px">
+    <!-- HEADER - LOGO, TAGLINE, KEY INFO AND TICKETS -->
+    <nav class="flex">
+      <div
+        class="info-header justify-align flex"
+        style="width: 3rem; height: 3rem"
+      >
+        <a href="index.html">
           <img
-            src="./assets/Logo/MiniLogo.svg"
-            alt="Mini Logo"
-            width="52px"
-            height="52px"
-            style="margin-bottom: 4px"
-          />
-        </div>
+            src="/assets/Logo/MiniLogo.svg"
+            alt="Navigation Logo"
+            class="mini-logo"
+        /></a>
       </div>
-      <div onclick="openMobileMenu()" class="burger">
-        <div class="menu" style="width: 32px; height: 32px">
-          <h2>
-            <i class="fa-solid fa-bars"></i>
-          </h2>
-        </div>
+      <div
+        onclick="toggleNavigation()"
+        class="hamburger-button button-nav info-header justify-align flex"
+        style="width: 3rem"
+      >
+        <i class="hamburger-button-closed fa-solid fa-bars"></i>
+        <i
+          style="display: none"
+          class="hamburger-button-opened fa-solid fa-xmark"
+        ></i>
       </div>
-    </div>
+      <ul class="navigation-subsection">
+        <div class="navigation-buttons">
+          <li>
+            <button class="button button-nav secondary-font flex justify-align">
+              <a
+              href="https://premier.ticketek.com.au/"
+              >Tickets</a
+            >
+            </button>
 
-    <!-- MAIN LOGO, TAGLINE, DATES -->
-    <div class="topsection">
-      <div class="mainlogo">
+          </li>
+
+          <li>
+            <button class="button button-nav secondary-font flex justify-align">
+              <a
+              href="line-up.html"
+              >Line Up</a
+            >
+            </button>
+
+          </li>
+          <li>
+            <button class="button button-nav secondary-font flex justify-align"><a
+              href="404.html"
+              >Locations</a
+            ></button>
+          </li>
+          <li>
+            <button class="button button-nav secondary-font flex justify-align">
+              <a
+              href="404.html"
+              >Contact</a
+            >
+            </button>
+
+          </li>
+          <li>
+            <button class="button button-nav secondary-font flex justify-align"
+            >
+            <a
+
+            href="404.html"
+            >Merch</a
+          ></button>
+            
+          </li>
+          <lix>
+            <button
+              class="button button-nav secondary-font neon-text flex justify-align open-modal-button"
+              >Sign Up</button
+            >
+          </li>
+        </div>
+      </ul>
+    </nav>
+    <header>
+      <section class="flex justify-align">
         <img
-          src="./assets/Logo/Mega.png"
-          style="width: 450px; height: 100px"
-          alt="Main Frontpage Logo"
+          src="/assets/Logo/Mega.png"
+          alt="Main Logo on the Home Page"
+          class="main-logo"
         />
-      </div>
-      <div class="keyinfo">
-        <div class="text">
+      </section>
+      <section class="tagline-margin section-key-info-margin background-shadow">
+        <div class="header-key-info flex justify-align section-text">
           3 Nights of premiere artistry and hypnotic craftsmanship
         </div>
-      </div>
-      <div class="keyinfo">
-        <div class="text" style="margin-bottom: 32px">
+      </section>
+      <section
+        class="section-key-info-margin background-shadow justify-align"
+        style="line-height: 2rem"
+      >
+        <div
+          class="header-key-dates header-key-info flex justify-align section-text"
+        >
           December 19th -> December 21st
         </div>
-        <div class="text">Brisbane, Sydney, Melbourne</div>
-      </div>
-      <div class="ticketsbackground" style="margin-top: 32px">
-        <div class="ticketsbutton" style="max-height: 8px; width: 320px">
-          <h2>Tickets</h2>
+        <div class="header-key-info flex justify-align section-text">
+          Brisbane, Sydney, Melbourne
         </div>
-      </div>
-    </div>
+      </section>
+      <section class="section-big-ticket-margin flex justify-align">
+        <div class="button-background button-main-callToAction">
+          <button
+            class="button button-main secondary-font neon-text flex justify-align"
+            >
+            <a href="https://premier.ticketek.com.au/">Tickets</a>
+            </button
+          >
+        </div>
+      </section>
+    </header>
 
-    <!-- ON SALE SLIDER/DIVIDER -->
-    <div class="onsale">
-      <div class="text">On Sale Now! On Sale Now! On Sale Now! On Sale N</div>
+    <!-- ON SALE SCROLLER -->
+    <div
+      class="scroller background-shadow"
+      data-direction="right"
+      data-duration="fast"
+    >
+      <ul class="tag-list scroller__inner flex">
+        <li class="section-text">On Sale Now!</li>
+        <li class="section-text">On Sale Now!</li>
+        <li class="section-text">On Sale Now!</li>
+        <li class="section-text">On Sale Now!</li>
+      </ul>
     </div>
-
-    <!-- LINE-UP AND LOCATIONS -->
 
     <!-- LINE-UP -->
-    <div class="title">
-      <div class="menu">
-        <h2>Line-Up</h2>
+    <section class="flex justify-align">
+      <div
+        class="info-header info-title secondary-font flex justify-align neon-text"
+      >
+        Line-Up
       </div>
-    </div>
-    <div class="moreinfo">
-      <div class="displays">
-        <div class="displaysinfo text">Richie Hawtin</div>
-        <div class="lineupcountry text">Canada</div>
+    </section>
+    <section class="flex justify-align">
+      <a href="line-up.html" class="display">
+        <div class="display-info display-artist section-text display-shadow">
+          Astrality
+        </div>
+        <div class="display-info display-country section-text display-shadow">
+          Italy
+        </div>
+
         <img
-          src="./assets/RichieHawtin.png"
-          alt="Richie Hawtin looking to the left and down"
+          src="/assets/Astrality.jpg"
+          alt="Astrality smiling looking directly at the camera"
         />
-      </div>
-      <div class="displays">
-        <div class="displaysinfo text">Robert Hood</div>
-        <div class="lineupcountry text">USA</div>
+      </a>
+      <a href="line-up.html" class="display">
+        <div class="display-info display-artist section-text display-shadow">
+          Mark Dekoda
+        </div>
+        <div class="display-info display-country section-text display-shadow">
+          Germany
+        </div>
+
         <img
-          src="./assets/RobertHood.jpg"
-          alt="Robert Hood using the mixer with one hand and looking down"
+          src="/assets/MarkDekoda.jpg"
+          alt="Looking down at the mixer and playing with the disc with his right hand"
         />
-      </div>
-      <div class="displays">
-        <div class="displaysinfo text">Surgeon</div>
-        <div class="lineupcountry text">UK</div>
+      </a>
+      <a href="line-up.html" class="display">
+        <div class="display-info display-artist section-text display-shadow">
+          RÜFÜS DU SOL
+        </div>
+        <div class="display-info display-country section-text display-shadow">
+          Australia
+        </div>
         <img
-          src="./assets/Surgeon.PNG"
-          alt="Surgeon from the side working on the mixer with both hands"
+          src="/assets/RUFUSDUSOL.jpg"
+          alt="All of RUFUS DU SOL standing in a line with the two on the outside looking at the camera and the middle looking to the left"
         />
-      </div>
-      <div class="displays">
-        <div class="displaysinfo text">Oscar Mulero</div>
-        <div class="lineupcountry text">Spain</div>
+      </a>
+      <a href="line-up.html" class="display">
+        <div class="display-info display-artist section-text display-shadow">
+          Oscar Mulero
+        </div>
+        <div class="display-info display-country section-text display-shadow">
+          Spain
+        </div>
         <img
           src="./assets/OscarMulero.jpg"
           alt="Oscar Mulero fiddling with the disc on the mixer with both hands"
         />
-      </div>
-      <div class="displays">
-        <div class="displaysinfo text">Robah Whrume</div>
-        <div class="lineupcountry text">Germany</div>
+      </a>
+      <a href="line-up.html" class="display">
+        <div class="display-info display-artist section-text display-shadow">
+          GHOST DATA
+        </div>
+        <div class="display-info display-country section-text display-shadow">
+          USA
+        </div>
         <img
-          src="./assets/RobahWhrume.jpg"
-          alt="Robah Whrume from the back with his arms wide-spread, facing the crowd"
+          src="/assets/GHOSTDATA.jpg"
+          alt="An animated image of a devilish woman staring into the camera"
         />
-      </div>
-    </div>
+      </a>
+    </section>
 
     <!-- LOCATIONS -->
-    <div class="title">
-      <div class="menu">
-        <h2>Locations</h2>
+    <section class="flex justify-align">
+      <div
+        class="info-header info-title secondary-font flex justify-align neon-text"
+      >
+        Locations
       </div>
-    </div>
-    <div class="moreinfo">
-      <div class="locationsgroup">
-        <div class="displays">
-          <div class="displaysinfo text">Brisbane</div>
+    </section>
+    <section class="flex justify-align">
+      <div class="display-location-margin">
+        <a href="404.html" class="display">
+          <div class="display-info display-country section-text display-shadow">
+            Brisbane
+          </div>
           <img
             src="./assets/Brisbane.jpg"
             alt="Wide-Eye view of Brisbane CBD, with Story Bridge"
           />
-        </div>
-        <div class="miniticket">
-          <div class="miniticketbutton">
-            <h2>Tickets</h2>
-          </div>
+        </a>
+        <div class="button-background-mini button-mini-callToAction mini-button-margin">
+          <button
+            class="button button-mini secondary-font flex justify-align"
+            
+            >
+            <a href="https://premier.ticketek.com.au/">Tickets</a></button
+          >
         </div>
       </div>
-      <div class="locationsgroup">
-        <div class="displays">
-          <div class="displaysinfo text">Sydney</div>
+      <div class="display-location-margin">
+        <a href="404.html" class="display">
+          <div class="display-info display-country section-text display-shadow">
+            Sydney
+          </div>
           <img
             src="./assets/Sydney.jpg"
             alt="Sydney Harbour Bridge from a below angle at night"
           />
-        </div>
-        <div class="miniticket">
-          <div class="miniticketbutton">
-            <h2>Tickets</h2>
-          </div>
+        </a>
+        <div class="button-background-mini button-mini-callToAction mini-button-margin">
+          <button
+            class="button button-mini secondary-font flex justify-align"
+            
+            >
+            <a href="https://premier.ticketek.com.au/">Tickets</a></button
+          >
         </div>
       </div>
-      <div class="locationsgroup">
-        <div class="displays">
-          <div class="displaysinfo text">Melbourne</div>
+      <div class="display-location-margin">
+        <a href="404.html" class="display">
+          <div class="display-info display-country section-text display-shadow">
+            Melbourne
+          </div>
           <img
             src="./assets/Melbourne.jpg"
             alt="Flinders Street Train Station"
           />
-        </div>
-        <div class="miniticket">
-          <div class="miniticketbutton">
-            <h2>Tickets</h2>
-          </div>
+        </a>
+        <div class="button-background-mini button-mini-callToAction mini-button-margin">
+          <button
+            class="button button-mini secondary-font flex justify-align"
+            
+            >
+            <a href="https://premier.ticketek.com.au/">Tickets</a></button
+          >
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- FOOTER -->
-    <div class="footer">
-      <div class="mainlogo" style="margin-bottom: 16px; cursor: pointer">
-        <img
-          src="./assets/Logo/Mega.png"
-          style="width: 352px; height: 80px"
-          alt="Footer Logo"
-        />
+    <footer class="flex justify-align">
+      <div class="footer-logo">
+        <a href="index.html">
+          <img
+            src="/assets/Logo/Mega.png"
+            alt="Footer Mega Logo"
+            class="footer-logo"
+          />
+        </a>
       </div>
-      <div class="links text">About</div>
-      <div class="links text">Line-Up</div>
-      <div class="links text">Locations</div>
-      <div class="links text">Merch</div>
-      <div class="links text">Contact</div>
-      <div class="links text">Privacy Policy</div>
-      <div class="text" style="margin-top: 36px">Follow Us!</div>
-      <div class="links text" style="word-spacing: 8px">
-        <i class="fa-brands fa-facebook"></i>
-        <i class="fa-brands fa-x-twitter"></i>
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-youtube"></i>
-        <i class="fa-brands fa-tiktok"></i>
-        <i class="fa-brands fa-spotify"></i>
-      </div>
-      <div class="signup">
-        <div class="ticketsbackground">
-          <div class="ticketsbutton" style="max-height: 8px; width: 320px">
-            <h2>Sign Up!</h2>
-          </div>
+      <section class="section-footer-links justify-align">
+        <a href="404.html" class="section-text">About</a>
+        <a href="line-up.html" class="section-text">Line-Up</a>
+        <a href="404.html" class="section-text">Locations</a>
+        <a href="404.html" class="section-text">Merch</a>
+        <a href="404.html" class="section-text">Contact</a>
+        <a href="404.html" class="section-text">Privacy</a>
+      </section>
+      <section class="footer-social-media">
+        <div class="section-text" style="margin-top: 2rem">Follow Us!</div>
+        <div class="section-text" style="word-spacing: 0.5rem">
+          <a href="https://www.facebook.com/" class="fa-brands fa-facebook"></a>
+          <a
+            href="https://twitter.com/?lang=en"
+            class="fa-brands fa-x-twitter"
+          ></a>
+          <a
+            href="https://www.instagram.com/"
+            class="fa-brands fa-instagram"
+          ></a>
+          <a href="https://www.youtube.com/" class="fa-brands fa-youtube"></a>
+          <a href="https://www.tiktok.com/" class="fa-brands fa-tiktok"></a>
+          <a href="https://open.spotify.com/" class="fa-brands fa-spotify"></a>
         </div>
+      </section>
+      <section class="footer-social-media">
+        <div class="button-background button-main-callToAction section-footer-button-margin">
+          <button class="button button-main secondary-font neon-text flex justify-align open-modal-button">Sign Up!</button>
+        </div>
+      </section>
+    </footer>
+
+    <dialog class="modal-sizing info-header" id="modal">
+      <div
+        onclick=""
+        class="close-modal-button"
+      >
+        <i
+          class="fa-solid fa-xmark"
+        ></i>
       </div>
-    </div>
+          <div class="modal-title secondary-font neon-text flex justify-align">Sign Up!</div>
+          <form class="justify-align" action="#">
+           <div class="field">
+            <input type="text" placeholder="Name" class="input">
+           </div>
+           <div class="field">
+            <input type="email" placeholder="Email" class="input">
+           </div>
+           <div class="field">
+            <input type="tel" placeholder="Phone Number" class="input" max="10">
+           </div>
+           <div class="field">
+            <button class="button-field secondary-font justify-align" type="submit">
+              <a class="signup-modal-button" href="404.html">Submit</a>
+              </button>
+           </div>
+          </form>
+        </dialog>
   </body>
 </html>
 
@@ -237,8 +382,141 @@
 
 “YouTube Icon | Font Awesome.” Fontawesome.com, fontawesome.com/icons/youtube?f=brands&s=solid
 
+"Globe Icon | Font Awesome." Fontawesome.com, fontawesome.com/icons/globe?f=classic&s=solid
+
+"Soundcloud Icon | Font Awesome." Fontawesome.com, fontawesome.com/icons/soundcloud?f=brands&s=solid
+
+"xmark Icon | Font Awesome." Fontawesome.com, fontawesome.com/icons/xmark?f=classic&s=solid
+
+"bars Icon | Font Awesome." Fontawesome.com, fontawesome.com/icons/bars?f=classic&s=solid
+
 Kottke, Jason. “Silkscreen.” Google Fonts, fonts.google.com/specimen/Silkscreen.
-Ozler, Isa. “Kode Mono.” Google Fonts, fonts.google.com/specimen/Kode+Mono. -->
+Ozler, Isa. “Kode Mono.” Google Fonts, fonts.google.com/specimen/Kode+Mono.
+
+Powell, K. (2023, September 23). Create an infinite horizontal scroll animation. Www.youtube.com. https://www.youtube.com/watch?v=iLmBy-HKIAw 
+
+Powell, K. (2022, March 18). dialog = the easiest way to make a popup modal. Www.youtube.com. https://www.youtube.com/watch?v=TAB_v6yBXIE
+
+evlearn. (2022, February 9). Responsive Navigation Bar using HTML, CSS & Javascript by evlearn. Www.youtube.com. https://www.youtube.com/watch?v=dIFNHeHTja0 -->
+
+<!-- Ticketek Australia. (n.d). https://premier.ticketek.com.au/ -->
+
+<!-- 
+ASSESSMENT THREE ASSETS
+
+Astrality. (2023, November 15). Instagram. Www.instagram.com. https://www.instagram.com/p/CzolF_YsNgs/
+
+Crystal Skies Official. (2024, January 6). Instagram. Www.instagram.com. https://www.instagram.com/p/C1uqzEnPkb5/?img_index=1
+
+Da Tweekaz. (2024, March 5). Instagram. Www.instagram.com. https://www.instagram.com/p/C4GYN-QNTYr/?img_index=6
+
+Dekoda, M. (2024, February 20). Instagram. Www.instagram.com. https://www.instagram.com/p/C3iSSvUIRog/?img_index=3
+
+GHOST DATA. (2022, May 3). Facebook. Www.facebook.com. https://www.facebook.com/photo/?fbid=407638024514097&set=a.209014941043074
+
+knock2music. (2023, December 6). Instagram. Www.instagram.com. https://www.instagram.com/p/C0fGgKmv0S9/
+
+Palastic Music. (2023, March 22). Instagram. Www.instagram.com. https://www.instagram.com/p/CqEDzyZMSoR/?img_index=1
+
+Ross, J. (n.d.). Academy LA - www.Academy.LA | Facebook. Www.facebook.com. Retrieved May 9, 2024, from https://www.facebook.com/academylosangeles/photos/t.100044110552224/609794336238481/?type=3
+
+RÜFÜS DU SOL. (2023, December 15). Instagram. Www.instagram.com. https://www.instagram.com/p/C02pZBWrztH/?img_index=1
+
+Subfocus. (2024, April 14). Instagram. Www.instagram.com. https://www.instagram.com/p/C5tItcaCl1T/
+
+Tura, M. (2022, December 29). Instagram. Www.instagram.com. https://www.instagram.com/p/CmwAQvHNcVR/?img_index=1 -->
+<!-- 
+Astrality. (n.d.-a). thisisastrality. https://www.instagram.com/thisisastrality/
+Astrality. (n.d.-b). Twitter | Astrality. Twitter. https://twitter.com/thisisastrality?lang=en
+Astrality. (2020a, January 17). Astrality. Spotify. https://open.spotify.com/artist/6KGv020mJkIjQH5YPDSBcZ
+Astrality. (2020b, November 1). Astrality. SoundCloud. https://soundcloud.com/thisisastrality
+Astrality. (2021, May 18). thisisastrality. Www.facebook.com. https://www.facebook.com/thisisastrality/
+Astrality. (2022, December 12). Astrality - YouTube. Www.youtube.com. https://www.youtube.com/channel/UCzE4Dsv0zEuKRqyumRO6qZg
+
+Crystal Skies. (2014, April 20). Crystal Skies. SoundCloud. https://soundcloud.com/crystalskies
+Crystal Skies. (2016, February 13). Crystal Skies - Facebook. Www.facebook.com. https://www.facebook.com/crystalskiesofficial/
+Crystal Skies. (2018, March 11). Crystal Skies. Spotify. https://open.spotify.com/artist/6HraHl4uwIQFixUu3J49BK
+Crystal Skies. (2019, April 16). Twitter | Crystal Skies. Twitter. https://twitter.com/ItsCrystalSkies
+Crystal Skies. (2022, January 16). Instagram. Www.instagram.com. https://www.instagram.com/crystalskiesofficial/?hl=en
+Crystal Skies. (2023, May 11). Crystal Skies - YouTube. Www.youtube.com. https://www.youtube.com/channel/UCKzN1RqsO37er9Bg80FMxcA
+
+Da Tweekaz. (n.d.). Da Tweekaz. Spotify. https://open.spotify.com/artist/6UOk7DmvqlzWmo6gjhZvn6?autoplay=true
+Da Tweekaz. (2008, October 16). Da Tweekaz Official Website. Da Tweekaz Official Website. https://datweekaz.com/
+Da Tweekaz. (2011a, August 21). Instagram. Www.instagram.com. https://www.instagram.com/datweekaz/?hl=en
+Da Tweekaz. (2011b, August 21). Twitter | Da Tweekaz. Twitter. https://twitter.com/DaTweekaz
+Da Tweekaz. (2011c, October 4). Da Tweekaz - Facebook. Www.facebook.com. https://www.facebook.com/DaTweekaz/
+Da Tweekaz. (2019, March 30). Da Tweekaz - YouTube. Www.youtube.com. https://www.youtube.com/channel/UCuyyM0QmLZNGxh2rm5CHosQ
+Da Tweekaz. (2021, October 8). Da Tweekaz. SoundCloud. https://soundcloud.com/datweekaz
+
+Dekoda, M. (n.d.-a). Instagram. Www.instagram.com. https://www.instagram.com/markdekoda/?hl=en
+Dekoda, M. (n.d.-b). Mark Dekoda. Spotify. https://open.spotify.com/artist/3FzG2HgsgPRfwpX1qSK1g8?autoplay=true
+Dekoda, M. (2011, April 25). Mark Dekoda. SoundCloud. https://soundcloud.com/mark-dekoda
+Dekoda, M. (2017, January 14). Mark Dekoda - Facebook. Www.facebook.com. https://www.facebook.com/MarkDekoda/
+Dekoda, M. (2018, August 6). Mark Dekoda | Homepage. Markdekoda. https://www.markdekoda.com/
+Dekoda, M. (2019a, July 12). Mark Dekoda - YouTube. Www.youtube.com. https://www.youtube.com/channel/UCRahnPpOp2Ttl8E1jnV9T4Q
+Dekoda, M. (2019b, August 18). Twitter | Mark Dekoda. Twitter. https://twitter.com/markdekoda?lang=en
+
+GHOST DATA. (n.d.-a). GHOST DATA. Spotify. https://open.spotify.com/artist/042mLfOBpH8OoX8A6sUYhf?autoplay=true
+GHOST DATA. (n.d.-b). Instagram. Www.instagram.com. https://www.instagram.com/ghostdata_/
+GHOST DATA. (2004, March 26). GHOST DATA. GHOST DATA. https://www.ghostdata.com/
+GHOST DATA. (2016, April 13). GHOST DATA. SoundCloud. https://soundcloud.com/ghost_data
+GHOST DATA. (2017, April 4). Twitter | GHOST DATA. Twitter. https://twitter.com/GHOSTDATA_
+GHOST DATA. (2018, April 8). GHOST DATA - YouTube. Www.youtube.com. https://www.youtube.com/channel/UCgg4V34MDerF5HkP8DOeUOg
+GHOST DATA. (2021, February 18). GHOST DATA - Facebook. Www.facebook.com. https://www.facebook.com/GHOSTDATAOFFICIAL/
+
+Knock2. (2022, May 13). Instagram. Www.instagram.com. https://www.instagram.com/knock2music/?hl=en
+Knock2. (n.d.-a). Knock2. Spotify. https://open.spotify.com/artist/6mmSS7itNWKbapgG2eZbIg?autoplay=true
+Knock2. (n.d.-b). Log in or sign up to view. Www.facebook.com. https://www.facebook.com/OfficialKnock2/
+Knock2. (2020, September 17). Knock2. SoundCloud. https://soundcloud.com/knock2music
+Knock2. (2021a, July 5). Twitter | Knock2. Twitter. https://twitter.com/Knock2Music
+Knock2. (2021b, December 9). Knock2. Knock2. https://www.knock2music.com/
+Knock2. (2022, June 16). Knock2 - YouTube. Www.youtube.com. https://www.youtube.com/channel/UCdb3pfoDoMOl-oMS1Ldsmiw
+
+Mulero, O. (n.d.-a). Instagram. Www.instagram.com. https://www.instagram.com/oscarmulerooficial/?hl=en
+Mulero, O. (n.d.-b). Oscar Mulero. Spotify. https://open.spotify.com/artist/3jisZjR3TBVb9tIfTbRHTS?autoplay=true
+Mulero, O. (2000, November 10). Oscar Mulero. Oscar Mulero. https://www.oscarmulero.com/
+Mulero, O. (2011, February 15). Oscar Mulero. SoundCloud. https://soundcloud.com/oscarmulero
+Mulero, O. (2014, May 29). Oscar Mulero - Facebook. Www.facebook.com. https://www.facebook.com/dj.oscarmulero/
+Mulero, O. (2019, October 5). Twitter | Oscar Mulero. Twitter. https://twitter.com/oscarmulero?lang=en
+Mulero, O. (2022, December 18). Official Oscar Mulero - YouTube. YouTube. https://www.youtube.com/@OfficialOscarMulero
+
+PALASTIC. (n.d.-a). Instagram. Www.instagram.com. https://www.instagram.com/palasticmusic/?hl=en
+PALASTIC. (n.d.-b). PALASTIC. Spotify. https://open.spotify.com/artist/6OFZSmtxDquMkX2XZJSN6y?autoplay=true
+PALASTIC. (n.d.-c). Twitter | PALASTIC. Twitter. https://twitter.com/palasticmusic?lang=en
+PALASTIC. (2015, September 11). PALASTIC. SoundCloud. https://soundcloud.com/PALASTIC
+PALASTIC. (2018, February 9). PALASTIC - Facebook. Www.facebook.com. https://www.facebook.com/palastic/
+PALASTIC. (2023, April 22). PALASTIC - YouTube. Www.youtube.com. https://www.youtube.com/@palasticmusic
+
+Ross, J. (n.d.-a). Instagram. Www.instagram.com. https://www.instagram.com/jasonrossofficial/?hl=en
+Ross, J. (n.d.-b). Jason Ross. Spotify. https://open.spotify.com/artist/6CCTvLyIHqUhY6VQizt150?autoplay=true
+Ross, J. (2013, October 1). Jason Ross - YouTube. Www.youtube.com. https://www.youtube.com/channel/UCiL7xnfenFObMPhlij0WaTg
+Ross, J. (2015a, September 24). Twitter | Jason Ross. Twitter. https://twitter.com/JasonRossOfc
+Ross, J. (2015b, December 15). Jason Ross. SoundCloud. https://soundcloud.com/jasonrossofficial
+Ross, J. (2016a, January 27). Jason Ross Merch. Jason Ross Official. https://jasonrossofficial.com/
+Ross, J. (2016b, April 27). Jason Ross - Facebook. Www.facebook.com. https://www.facebook.com/jasonrossofficial/
+
+RÜFÜS DU SOL. (2015, June 1). RÜFÜS DU SOL. SoundCloud. https://soundcloud.com/rufusdusol
+RÜFÜS DU SOL. (2016, May 16). RÜFÜS DU SOL - YouTube. Www.youtube.com. https://www.youtube.com/channel/UC6iin46o7SrAsnl9ig__vlw
+RÜFÜS DU SOL. (2018a, May 28). RÜFÜS DU SOL Official Website. RÜFÜS DU SOL. https://www.rufusdusol.com/
+RÜFÜS DU SOL. (2018b, July 25). Twitter | RÜFÜS DU SOL. Twitter. https://twitter.com/rufusdusol?lang=en
+RÜFÜS DU SOL. (2018c, September 25). RÜFÜS DU SOL - Facebook. Www.facebook.com. https://www.facebook.com/rufusdusol/
+RÜFÜS DU SOL. (2021, November 8). Login • Instagram. Www.instagram.com. https://www.instagram.com/rufusdusol/?hl=en
+RÜFÜS DU SOL. (2024, May 17). RÜFÜS DU SOL. Spotify. https://open.spotify.com/artist/5Pb27ujIyYb33zBqVysBkj
+
+Sub Focus. (2004, July 14). Sub Focus. Sub Focus. https://www.subfocus.com/
+Sub Focus. (2010a, June 6). Sub Focus. SoundCloud. https://soundcloud.com/subfocus
+Sub Focus. (2010b, November 10). Twitter | Sub Focus. Twitter. https://twitter.com/subfocus
+Sub Focus. (2011a, May 2). Sub Focus - Facebook. Www.facebook.com. https://www.facebook.com/subfocus/
+Sub Focus. (2011b, October 2). Sub Focus. Spotify. https://open.spotify.com/artist/0QaSiI5TLA4N7mcsdxShDO
+Sub Focus. (2015, December 23). Instagram. Www.instagram.com. https://www.instagram.com/subfocus/?hl=en
+Sub Focus. (2018, June 27). Sub Focus - YouTube. Www.youtube.com. https://www.youtube.com/channel/UCWkMMrVPVVNxuJFHv4ApiDg
+
+Tura, M. (n.d.). Instagram. Www.instagram.com. https://www.instagram.com/matteo.tura/?hl=en
+Tura, M. (2021a, August 30). Matteo Tura - YouTube. Www.youtube.com. https://www.youtube.com/channel/UCDCIhjdn2noGAwF45WTuwSg
+Tura, M. (2021b, October 31). Matteo Tura. SoundCloud. https://soundcloud.com/matteo-tura-official
+Tura, M. (2023a, January 31). Matteo Tura - Facebook. Www.facebook.com. https://www.facebook.com/matteo.tura.official/
+Tura, M. (2023b, February 24). MATTEO TURA - Electronic Music Producer - Sound Designer. MATTEO TURA. https://matteotura.com/
+Tura, M. (2023c, December 22). Matteo Tura. Spotify. https://open.spotify.com/artist/4MDRNxNtr5Zwyhgk6TC0ur?autoplay=true -->
 
 <!-- Assessment One Assets
 
