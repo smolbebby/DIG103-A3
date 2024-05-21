@@ -80,8 +80,7 @@ a {
 header {
   height: auto;
   padding: 8px 8px 8px 8px;
-  /* margin-top: 16px; */
-  display: flex;
+
   justify-content: space-between;
   margin-block: 0.5rem;
 }
